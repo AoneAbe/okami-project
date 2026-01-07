@@ -14,7 +14,7 @@ const Section9 = () => {
           className="mb-12"
         >
           <img
-            src="/src/imgs/social-activity.png"
+            src="/imgs/social-activity.png"
             alt="社会活動と国際貢献"
             className="w-full h-auto rounded-3xl shadow-2xl"
           />

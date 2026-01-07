@@ -7,7 +7,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-5 flex justify-between items-center">
         {/* ロゴ */}
         <Link to="/" className="header-logo">
-          <img src="/src/imgs/ookami-logo.png" alt="OKAMICARD Logo" className="h-10" />
+          <img src="/imgs/ookami-logo.png" alt="OKAMICARD Logo" className="h-10" />
         </Link>
 
         {/* ナビゲーション */}

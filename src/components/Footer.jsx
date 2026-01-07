@@ -15,7 +15,7 @@ const Footer = () => {
           {/* ロゴ */}
           <div className="mb-6">
             <img
-              src="/src/imgs/ookami-logo.png"
+              src="/imgs/ookami-logo.png"
               alt="OKAMICARD Logo"
               className="h-12 mx-auto"
             />

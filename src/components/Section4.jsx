@@ -46,7 +46,7 @@ const Section4 = () => {
             </p>
             <div className="flex justify-center">
               <img
-                src="/src/imgs/system1.png"
+                src="/imgs/system1.png"
                 alt="中央集権型システム"
                 className="w-48 h-auto"
               />
@@ -92,7 +92,7 @@ const Section4 = () => {
             </p>
             <div className="flex justify-center">
               <img
-                src="/src/imgs/system2.png"
+                src="/imgs/system2.png"
                 alt="分散型システム"
                 className="w-48 h-auto"
               />

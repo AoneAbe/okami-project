@@ -5,7 +5,7 @@ const Section10 = () => {
   return (
     <section
       className="py-32 bg-cover bg-center bg-no-repeat relative"
-      style={{ backgroundImage: "url('/src/imgs/line-join.jpg')" }}
+      style={{ backgroundImage: "url('/imgs/line-join.jpg')" }}
     >
       {/* 暗めのオーバーレイ */}
       <div className="absolute inset-0 bg-black/60" />

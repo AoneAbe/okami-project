@@ -62,7 +62,7 @@ const CompanyPage = () => {
             {/* 右：画像 */}
             <div className="rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/src/imgs/we-are.jpg"
+                src="/imgs/we-are.jpg"
                 alt="私たちについて"
                 className="w-full h-auto"
               />
@@ -80,7 +80,7 @@ const CompanyPage = () => {
             {/* 左：画像 */}
             <div className="rounded-2xl overflow-hidden shadow-2xl order-2 lg:order-1">
               <img
-                src="/src/imgs/okami.jpg"
+                src="/imgs/okami.jpg"
                 alt="社会活動と国際貢献"
                 className="w-full h-auto"
               />
@@ -127,7 +127,7 @@ const CompanyPage = () => {
             className="flex justify-center mb-12"
           >
             <img
-              src="/src/imgs/project.png"
+              src="/imgs/project.png"
               alt="OKAMI PROJECTS"
               className="w-full max-w-4xl h-auto"
             />
@@ -190,7 +190,7 @@ const CompanyPage = () => {
             <div className="lg:col-span-2">
               <div className="rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="/src/imgs/osada-tadachiyo.jpg"
+                  src="/imgs/osada-tadachiyo.jpg"
                   alt="長田 忠千代"
                   className="w-full h-auto"
                 />
@@ -224,7 +224,7 @@ const CompanyPage = () => {
             <div className="lg:col-span-2">
               <div className="rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="/src/imgs/kiuchi-masatane.jpg"
+                  src="/imgs/kiuchi-masatane.jpg"
                   alt="木内 正胤"
                   className="w-full h-auto"
                 />
@@ -256,7 +256,7 @@ const CompanyPage = () => {
             <div className="lg:col-span-2">
               <div className="rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="/src/imgs/mochizuki-kousei.jpg"
+                  src="/imgs/mochizuki-kousei.jpg"
                   alt="望月 こうせい"
                   className="w-full h-auto"
                 />

@@ -12,7 +12,7 @@ const Section1 = () => {
     <section
       id="home"
       className="min-h-screen bg-cover bg-center bg-no-repeat pt-20 flex items-center"
-      style={{ backgroundImage: "url('/src/imgs/mv-bgimg.png')" }}
+      style={{ backgroundImage: "url('/imgs/mv-bgimg.png')" }}
     >
       <div className="max-w-7xl mx-auto px-5 py-16 w-full">
         <div className="flex justify-between items-center gap-16 flex-wrap lg:flex-nowrap">
@@ -43,7 +43,7 @@ const Section1 = () => {
           {/* 右側：カード画像 */}
           <div className="flex-1 flex justify-center items-center">
             <img
-              src="/src/imgs/ookami-card.png"
+              src="/imgs/ookami-card.png"
               alt="OKAMICARD"
               className="w-full max-w-md lg:max-w-lg drop-shadow-2xl"
             />

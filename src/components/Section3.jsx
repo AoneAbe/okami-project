@@ -27,7 +27,7 @@ const Section3 = () => {
   return (
     <section
       className="py-24 bg-cover bg-center bg-no-repeat relative"
-      style={{ backgroundImage: "url('/src/imgs/future-bgimg.png')" }}
+      style={{ backgroundImage: "url('/imgs/future-bgimg.png')" }}
     >
       {/* 薄いオーバーレイ */}
       <div className="absolute inset-0 bg-black/5" />

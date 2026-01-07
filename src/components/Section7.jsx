@@ -58,7 +58,7 @@ const Section7 = () => {
             className="flex justify-center lg:justify-end"
           >
             <img
-              src="/src/imgs/ookami-card.png"
+              src="/imgs/ookami-card.png"
               alt="ニホンオオカミカード"
               className="w-full max-w-md lg:max-w-lg drop-shadow-2xl transform hover:scale-105 transition-transform duration-500"
             />

@@ -89,7 +89,7 @@ const BlogPage = () => {
       {/* CTA Section */}
       <section
         className="py-32 bg-cover bg-center bg-no-repeat relative"
-        style={{ backgroundImage: "url('/src/imgs/line-join.jpg')" }}
+        style={{ backgroundImage: "url('/imgs/line-join.jpg')" }}
       >
         <div className="absolute inset-0 bg-black/60" />
         <div className="max-w-4xl mx-auto px-5 relative z-10 text-center">

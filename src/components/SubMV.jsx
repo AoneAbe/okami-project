@@ -6,7 +6,7 @@ const SubMV = ({ title, subtitle }) => {
     <section
       className="relative h-96 bg-cover bg-top bg-no-repeat pt-20"
       style={{
-        backgroundImage: "url('/src/imgs/mv-bgimg.png')",
+        backgroundImage: "url('/imgs/mv-bgimg.png')",
         backgroundPosition: 'center top'
       }}
     >
