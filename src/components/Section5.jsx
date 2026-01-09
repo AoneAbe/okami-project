@@ -1,7 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const Section5 = () => {
+  const { t } = useTranslation();
   return (
     <section className="py-24 bg-gradient-to-b from-white to-gray-50">
       <div className="max-w-7xl mx-auto px-5">
@@ -13,12 +15,12 @@ const Section5 = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl font-bold text-gray-900 mb-6">Merit</h2>
+          <h2 className="text-5xl font-bold text-gray-900 mb-6">{t('section5.title')}</h2>
           <p className="text-2xl font-bold text-gray-800 mb-4">
-            上位ほどお得＆優位な条件で使える
+            {t('section5.subtitle')}
           </p>
           <p className="text-lg text-cyan-600 font-medium">
-            エアドロ機能により利息のようにコインが増えていく！
+            {t('section5.description')}
           </p>
         </motion.div>
 
@@ -31,7 +33,7 @@ const Section5 = () => {
           className="flex justify-center"
         >
           <img
-            src="/imgs/merit.png"
+            src={`${import.meta.env.BASE_URL}imgs/merit.png`}
             alt="OKAMICARD メリット"
             className="w-full max-w-4xl h-auto shadow-2xl rounded-2xl"
           />

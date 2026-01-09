@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { newsData } from '../data/newsData';
 
 const Section2 = () => {
+  const { t } = useTranslation();
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // 自動スライド（5秒ごと）
@@ -39,8 +41,8 @@ const Section2 = () => {
       <div className="max-w-7xl mx-auto px-5">
         {/* セクションタイトル */}
         <div className="mb-12">
-          <h2 className="text-4xl font-bold text-gray-800 mb-2">Pick UP News</h2>
-          <p className="text-gray-600">最新ニュース</p>
+          <h2 className="text-4xl font-bold text-gray-800 mb-2">{t('homePage.section2.title')}</h2>
+          <p className="text-gray-600">{t('homePage.section2.subtitle')}</p>
         </div>
 
         {/* ニュースカルーセル */}
@@ -57,7 +59,7 @@ const Section2 = () => {
                 className="relative group cursor-pointer overflow-hidden rounded-2xl shadow-2xl h-[500px]"
               >
                 <img
-                  src={visibleNews[0].thumbnail}
+                  src={`${import.meta.env.BASE_URL}${visibleNews[0].thumbnail}`}
                   alt={visibleNews[0].title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
@@ -113,7 +115,7 @@ const Section2 = () => {
                     {/* 画像 */}
                     <div className="relative overflow-hidden rounded-lg shadow-md aspect-square mb-3">
                       <img
-                        src={news.thumbnail}
+                        src={`${import.meta.env.BASE_URL}${news.thumbnail}`}
                         alt={news.title}
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                       />

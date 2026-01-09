@@ -1,8 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { featuresData } from '../data/featuresData';
 
 const Section3 = () => {
+  const { t } = useTranslation();
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -27,7 +29,7 @@ const Section3 = () => {
   return (
     <section
       className="py-24 bg-cover bg-center bg-no-repeat relative"
-      style={{ backgroundImage: "url('/imgs/future-bgimg.png')" }}
+      style={{ backgroundImage: `url('${import.meta.env.BASE_URL}imgs/future-bgimg.png')` }}
     >
       {/* 薄いオーバーレイ */}
       <div className="absolute inset-0 bg-black/5" />
@@ -41,9 +43,9 @@ const Section3 = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl font-bold text-white mb-3 drop-shadow-lg">Future</h2>
+          <h2 className="text-5xl font-bold text-white mb-3 drop-shadow-lg">{t('homePage.section3.title')}</h2>
           <p className="text-lg text-white font-medium drop-shadow-md">
-            OKAMI CARD<span className="text-white/90">の特徴</span>
+            {t('homePage.section3.subtitle')}
           </p>
           <div className="w-px h-16 bg-white/50 mx-auto mt-8" />
         </motion.div>
@@ -65,8 +67,8 @@ const Section3 = () => {
               {/* アイコン（丸い画像） */}
               <div className="w-48 h-48 rounded-full overflow-hidden mb-8 shadow-2xl ring-4 ring-white/50">
                 <img
-                  src={feature.icon}
-                  alt={feature.title}
+                  src={`${import.meta.env.BASE_URL}${feature.icon}`}
+                  alt={t(`features.feature${feature.id}.title`)}
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -75,12 +77,12 @@ const Section3 = () => {
               <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-xl">
                 {/* 見出し */}
                 <h3 className="text-xl font-bold text-gray-900 mb-4 leading-relaxed">
-                  {feature.title}
+                  {t(`features.feature${feature.id}.title`)}
                 </h3>
 
                 {/* 本文 */}
                 <p className="text-sm text-gray-700 leading-relaxed">
-                  {feature.description}
+                  {t(`features.feature${feature.id}.description`)}
                 </p>
               </div>
             </motion.div>

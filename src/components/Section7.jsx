@@ -1,7 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const Section7 = () => {
+  const { t } = useTranslation();
   return (
     <section className="py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-black relative overflow-hidden">
       {/* 背景装飾 */}
@@ -21,20 +23,18 @@ const Section7 = () => {
             className="text-white space-y-8"
           >
             {/* メインキャッチ */}
-            <h2 className="text-5xl md:text-6xl font-bold leading-tight bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
-              決算限度額＋<br />引き出し無制限
+            <h2 className="text-5xl md:text-6xl font-bold leading-tight bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent whitespace-pre-line">
+              {t('section7.title')}
             </h2>
 
             {/* サブキャッチ */}
-            <p className="text-sm md:text-base text-gray-300 leading-relaxed">
-              未だベールに包まれている取得方法不明の<br />
-              チタンカード【ニホンオオカミカード】
+            <p className="text-sm md:text-base text-gray-300 leading-relaxed whitespace-pre-line">
+              {t('section7.subtitle')}
             </p>
 
             {/* CTA文言 */}
-            <p className="text-2xl md:text-3xl font-bold text-white leading-relaxed">
-              プラチナホルダーのみに...<br />
-              インビテーションの可能性が!?
+            <p className="text-2xl md:text-3xl font-bold text-white leading-relaxed whitespace-pre-line">
+              {t('section7.cta')}
             </p>
 
             {/* CTAボタン（オプション） */}
@@ -44,7 +44,7 @@ const Section7 = () => {
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-purple-500 text-white font-bold rounded-full shadow-2xl hover:shadow-cyan-500/50 transition-all"
               >
-                詳細を確認する
+                {t('section7.button')}
               </motion.button>
             </div>
           </motion.div>
@@ -58,7 +58,7 @@ const Section7 = () => {
             className="flex justify-center lg:justify-end"
           >
             <img
-              src="/imgs/ookami-card.png"
+              src={`${import.meta.env.BASE_URL}imgs/ookami-card.png`}
               alt="ニホンオオカミカード"
               className="w-full max-w-md lg:max-w-lg drop-shadow-2xl transform hover:scale-105 transition-transform duration-500"
             />

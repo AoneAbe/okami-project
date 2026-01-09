@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './i18n';
 import HomePage from './pages/HomePage';
 import BlogPage from './pages/BlogPage';
 import NewsListPage from './pages/NewsListPage';
@@ -7,7 +8,7 @@ import CompanyPage from './pages/CompanyPage';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/okami-project">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/blog" element={<BlogPage />} />

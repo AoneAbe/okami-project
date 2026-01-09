@@ -1,9 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { flowData } from '../data/flowData';
 
 const Section8 = () => {
+  const { t } = useTranslation();
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -36,8 +38,8 @@ const Section8 = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl font-bold text-gray-900 mb-3">FLOW</h2>
-          <p className="text-lg text-gray-700 font-medium">お申し込みまでの流れ</p>
+          <h2 className="text-5xl font-bold text-gray-900 mb-3">{t('section8.title')}</h2>
+          <p className="text-lg text-gray-700 font-medium">{t('section8.subtitle')}</p>
           <div className="w-px h-16 bg-gray-300 mx-auto mt-8" />
         </motion.div>
 
@@ -59,8 +61,8 @@ const Section8 = () => {
                 {/* 画像 */}
                 <div className="w-64 h-64 rounded-full overflow-hidden mb-6 shadow-xl">
                   <img
-                    src={flow.image}
-                    alt={flow.title}
+                    src={`${import.meta.env.BASE_URL}${flow.image}`}
+                    alt={t(`flow.step${flow.id}.title`)}
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -72,12 +74,12 @@ const Section8 = () => {
 
                 {/* 小見出し */}
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  {flow.title}
+                  {t(`flow.step${flow.id}.title`)}
                 </h3>
 
                 {/* 本文 */}
                 <p className="text-sm text-gray-700 leading-relaxed">
-                  {flow.description}
+                  {t(`flow.step${flow.id}.description`)}
                 </p>
               </motion.div>
 
@@ -119,9 +121,8 @@ const Section8 = () => {
           className="mt-16 text-center"
         >
           <div className="inline-block bg-yellow-50 border-2 border-yellow-400 rounded-lg p-6 max-w-2xl">
-            <p className="text-sm text-gray-800 leading-relaxed">
-              対象年齢は２０歳以上です。<br />
-              未成年のお申し込みはできません。<br />仮想通貨（USDTまたはイーサリアム）で当月末までにご入金下さい。
+            <p className="text-sm text-gray-800 leading-relaxed whitespace-pre-line">
+              {t('section8.notice')}
             </p>
           </div>
         </motion.div>

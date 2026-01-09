@@ -50,7 +50,7 @@ const NewsListPage = () => {
                 {/* サムネイル */}
                 <div className="relative h-56 overflow-hidden">
                   <img
-                    src={news.thumbnail}
+                    src={`${import.meta.env.BASE_URL}${news.thumbnail}`}
                     alt={news.title}
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                   />

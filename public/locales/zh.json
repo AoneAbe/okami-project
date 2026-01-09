@@ -1,0 +1,167 @@
+{
+  "lang": "zh",
+  "crossBorderModal": {
+    "title": "跨境服務限制",
+    "paragraph1": "您正在嘗試從香港以外的IP地址訪問我們的網站。",
+    "paragraph2": "請注意，在香港以外地區推廣或分發我們的產品或服務可能需要特定許可證。本網站的內容僅針對居住在香港的香港居民。",
+    "paragraph3": "如果您是香港以外的居民且不希望繼續，請關閉此頁面。點擊「繼續」即表示您確認已閱讀並理解上述聲明，並且您是主動訪問本網站，而非受到Okami Project的積極推廣或招攬。",
+    "continueButton": "繼續"
+  },
+  "header": {
+    "home": "首頁",
+    "features": "功能",
+    "howToUse": "使用方法",
+    "news": "新聞",
+    "company": "公司信息",
+    "apply": "申請"
+  },
+  "companyPage": {
+    "subtitle": "公司信息",
+    "whoWeAre": {
+      "title": "WHO WE ARE",
+      "subtitle": "關於我們",
+      "heading1": "創造一個\n充滿笑容、做自己喜歡的事情\n的理所當然的世界",
+      "paragraph1": "我們相信，通過每天充滿激情地生活，可以實現自我實現和社會貢獻的雙重目標。",
+      "paragraph2": "我們每天都在挑戰，旨在創造一個每個人都能做自己的理所當然的世界。",
+      "heading2": "社會活動與國際貢獻",
+      "paragraph3": "通過大神項目，我們建立基金以拯救每年據說有11,000隻被安樂死的動物，或與動物保護組織合作並提供支持，幫助實現更美好的社會。",
+      "paragraph4": "具體而言，使用大神卡時作為交易使用的大神幣的一部分將用於社會貢獻活動。"
+    },
+    "projects": {
+      "title": "OKAMI PROJECTS",
+      "subtitle": "大神項目",
+      "heading": "通過OKAMI PROJECT\n讓每個人都幸福",
+      "paragraph": "這意味著您使用卡片\n並持有大神幣本身\n就是在為社會做貢獻。"
+    },
+    "members": {
+      "title": "MEMBER",
+      "subtitle": "成員介紹",
+      "osada": {
+        "name": "長田 忠千代",
+        "bio": "1956年10月出生\n2010年成為日本最大的超級銀行三菱UFJ銀行的常務執行董事，2012年就任該銀行的代表董事。\n 作為三菱UFJ銀行乃至整個MUFG集團零售業務的負責人，統籌包括集團公司三菱UFJ Nicos等信用卡業務在內的消費金融業務。\n 此外，他對AI、Web 3.0等尖端領域也有濃厚興趣，擔任一般財團法人元宇宙推進協議會、一般社團法人生成AI活用普及協會理事等職務。"
+      },
+      "kiuchi": {
+        "name": "木內 正胤",
+        "bio": "1964年10月出生。作為日本最大財閥集團三菱商事創始人岩崎彌太郎的玄孫出生，木內正胤本人也加入了三菱商事。\n 現在仍作為三菱商事的現任高層活躍。日本第一家銀行「第一國立銀行」的創始人【澀澤榮一】是木內正胤的曾祖父。"
+      },
+      "mochizuki": {
+        "name": "望月 こうせい",
+        "bio": "1974年8月出生。居住在迪拜，大神財團代表\n 從負債600萬日元的貧窮上班族一躍而成，構建了獨自一人年收入3億日元的獨特方法。\n2022年從新加坡遷至迪拜，從事加密資產和房地產投資。出版了6本著作。"
+      }
+    }
+  },
+  "homePage": {
+    "section1": {
+      "subtitle": "支援加密貨幣　OKAMICARD",
+      "title": "世界最高級\n私人\n安全卡",
+      "feature1": "可存儲所有加密貨幣",
+      "feature2": "與專用錢包聯動",
+      "feature3": "無需兌換成法定貨幣\n即可直接支付"
+    },
+    "section2": {
+      "title": "Pick UP News",
+      "subtitle": "最新消息"
+    },
+    "section3": {
+      "title": "Future",
+      "subtitle": "OKAMI CARD的特點"
+    }
+  },
+  "features": {
+    "feature1": {
+      "title": "無需兌換法定貨幣即可直接支付",
+      "description": "大神卡與可存儲所有加密貨幣（包括狗狗幣和柴犬幣等）的專用錢包聯動，無需兌換成本國法定貨幣即可直接支付。"
+    },
+    "feature2": {
+      "title": "配備AirDrop功能，高級卡片更具優勢",
+      "description": "OKAMI CARD配備了AirDrop功能，高級卡片可以在更優惠和有利的條件下使用"
+    },
+    "feature3": {
+      "title": "引入價值上漲機制",
+      "description": "在全世界使用得越多，大神幣的數量就越少，因此每枚硬幣的價值會上升"
+    }
+  },
+  "section4": {
+    "oldSystem": "以前的",
+    "centralized": "中央集權型",
+    "centralizedDesc": "銀行控制\n您的資金",
+    "newSystem": "未來的",
+    "decentralized": "去中心化型",
+    "decentralizedDesc": "通過區塊鏈技術\n實現分散化"
+  },
+  "section5": {
+    "title": "Merit",
+    "subtitle": "高級卡片享有更優惠和有利的條件",
+    "description": "通過AirDrop功能，硬幣像利息一樣增加！"
+  },
+  "section6": {
+    "title": "REASON WHY",
+    "subtitle": "OKAMI CARD才能實現的5個要點"
+  },
+  "reasons": {
+    "reason1": {
+      "title": "用大神錢包\n管理所有硬幣",
+      "description": "以前的錢包需要根據持有的硬幣種類準備多個錢包，但使用大神卡專用錢包，只需一個就能完成。",
+      "feature1": "用一個錢包管理所有硬幣",
+      "feature2": "減少丟失登錄信息的風險"
+    },
+    "reason2": {
+      "title": "與國際品牌合作\n全球可用！",
+      "description": "通過與最著名的國際品牌合作，可在全世界進行餐飲和購物。"
+    },
+    "reason3": {
+      "title": "全國ATM\n可提取日元",
+      "description": "持有卡片，隨時隨地可從日本全國的ATM提取日元現金。"
+    },
+    "reason4": {
+      "title": "支持Apple Pay等\n無現金支付！",
+      "description": "提前在您的智能手機上註冊卡片，即可無需卡片進行無現金支付。錢包和卡片都在一部智能手機中，非常方便使用。"
+    },
+    "reason5": {
+      "title": "最高合規標準",
+      "description": "OKAMI CARD由在香港設立、獲得許可和監管的組織運營，是執行實時區塊鏈交易的合法金融產品。"
+    }
+  },
+  "section7": {
+    "title": "結算額度+\n無限制提款",
+    "subtitle": "獲取方法仍然神秘莫測的\n鈦金卡【日本大神卡】",
+    "cta": "僅限白金持有者...\n可能獲得邀請！？",
+    "button": "查看詳情"
+  },
+  "section8": {
+    "title": "FLOW",
+    "subtitle": "申請流程",
+    "notice": "適用年齡為20歲以上。\n未成年人不得申請。\n請在當月末前使用加密貨幣（USDT或以太坊）存款。"
+  },
+  "flow": {
+    "step1": {
+      "title": "預約申請",
+      "description": "首先通過表格進行預約申請。"
+    },
+    "step2": {
+      "title": "註冊專用LINE/Chat",
+      "description": "註冊稍後通知的專用帳戶。"
+    },
+    "step3": {
+      "title": "匯款至指定帳戶",
+      "description": "將USDT或以太坊發送至指定帳戶。"
+    }
+  },
+  "section9": {
+    "label": "SOCIAL ACTIVITY",
+    "title": "社會活動與國際貢獻",
+    "description": "通過大神項目，我們建立基金以拯救每年據說有11,000隻被安樂死的動物，或與動物保護組織合作並提供支持，幫助實現更美好的社會。"
+  },
+  "section10": {
+    "title": "加入大神項目\n一起改變\n世界？",
+    "subtitle": "關於申請，請聯繫以下LINE帳戶或介紹人。",
+    "button": "通過LINE聯繫"
+  },
+  "footer": {
+    "copyright": "© Copyright OKAMI CARD All Rights Reserved"
+  },
+  "blogPage": {
+    "title": "What's NEWS",
+    "subtitle": "最新消息"
+  }
+}

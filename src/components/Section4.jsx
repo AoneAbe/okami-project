@@ -1,8 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Section4 = () => {
+  const { t } = useTranslation();
   const cardVariants = {
     hidden: { opacity: 0, x: -30 },
     visible: {
@@ -37,16 +39,16 @@ const Section4 = () => {
             variants={cardVariants}
             className="bg-white rounded-3xl shadow-xl p-10 text-center"
           >
-            <p className="text-lg text-gray-700 mb-4">これまでの</p>
+            <p className="text-lg text-gray-700 mb-4">{t('section4.oldSystem')}</p>
             <div className="bg-cyan-500 text-white text-3xl font-bold py-6 px-8 rounded-2xl mb-8">
-              中央債権型
+              {t('section4.centralized')}
             </div>
-            <p className="text-xl font-bold text-gray-800 mb-8 leading-relaxed">
-              銀行がお金を<br />コントロール
+            <p className="text-xl font-bold text-gray-800 mb-8 leading-relaxed whitespace-pre-line">
+              {t('section4.centralizedDesc')}
             </p>
             <div className="flex justify-center">
               <img
-                src="/imgs/system1.png"
+                src={`${import.meta.env.BASE_URL}imgs/system1.png`}
                 alt="中央集権型システム"
                 className="w-48 h-auto"
               />
@@ -83,16 +85,16 @@ const Section4 = () => {
             variants={cardVariantsRight}
             className="bg-white rounded-3xl shadow-xl p-10 text-center"
           >
-            <p className="text-lg text-gray-700 mb-4">これからの</p>
+            <p className="text-lg text-gray-700 mb-4">{t('section4.newSystem')}</p>
             <div className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white text-3xl font-bold py-6 px-8 rounded-2xl mb-8">
-              非中央債権型
+              {t('section4.decentralized')}
             </div>
-            <p className="text-xl font-bold text-gray-800 mb-8 leading-relaxed">
-              ブロックチェーン技術<br />により分散型へ
+            <p className="text-xl font-bold text-gray-800 mb-8 leading-relaxed whitespace-pre-line">
+              {t('section4.decentralizedDesc')}
             </p>
             <div className="flex justify-center">
               <img
-                src="/imgs/system2.png"
+                src={`${import.meta.env.BASE_URL}imgs/system2.png`}
                 alt="分散型システム"
                 className="w-48 h-auto"
               />

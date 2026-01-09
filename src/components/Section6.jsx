@@ -1,9 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Check } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { reasonsData } from '../data/reasonsData';
 
 const Section6 = () => {
+  const { t } = useTranslation();
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -36,9 +38,9 @@ const Section6 = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-20"
         >
-          <h2 className="text-5xl font-bold text-gray-900 mb-4">REASON WHY</h2>
+          <h2 className="text-5xl font-bold text-gray-900 mb-4">{t('section6.title')}</h2>
           <p className="text-xl text-gray-700 font-medium">
-            OKAMI CARD<span className="text-cyan-600">だから出来る5つのポイント</span>
+            <span className="text-cyan-600">{t('section6.subtitle')}</span>
           </p>
         </motion.div>
 
@@ -59,8 +61,8 @@ const Section6 = () => {
               {/* 左側：画像 */}
               <div className="flex justify-center lg:justify-start">
                 <img
-                  src={reason.image}
-                  alt={reason.title}
+                  src={`${import.meta.env.BASE_URL}${reason.image}`}
+                  alt={t(`reasons.reason${reason.id}.title`)}
                   className="w-full max-w-md h-auto rounded-2xl shadow-lg"
                 />
               </div>
@@ -69,12 +71,12 @@ const Section6 = () => {
               <div className="space-y-6">
                 {/* 小見出し */}
                 <h3 className="text-3xl font-bold text-gray-900 leading-tight whitespace-pre-line">
-                  {reason.title}
+                  {t(`reasons.reason${reason.id}.title`)}
                 </h3>
 
                 {/* 本文 */}
                 <p className="text-base text-gray-700 leading-relaxed">
-                  {reason.description}
+                  {t(`reasons.reason${reason.id}.description`)}
                 </p>
 
                 {/* チェック項目（ある場合のみ） */}
@@ -85,7 +87,7 @@ const Section6 = () => {
                         <div className="flex-shrink-0 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
                           <Check className="w-4 h-4 text-white" strokeWidth={3} />
                         </div>
-                        <span className="text-base text-gray-800">{feature}</span>
+                        <span className="text-base text-gray-800">{t(`reasons.reason${reason.id}.feature${idx + 1}`)}</span>
                       </li>
                     ))}
                   </ul>
@@ -95,7 +97,7 @@ const Section6 = () => {
           ))}
         </motion.div>
 
-        {/* カードバリエーション画像 */}
+        {/* カードバリエーション画像（言語別） */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -104,7 +106,7 @@ const Section6 = () => {
           className="mt-20 flex justify-center"
         >
           <img
-            src="/imgs/card-variation.png"
+            src={`${import.meta.env.BASE_URL}imgs/card-variation-${t('lang')}.png`}
             alt="OKAMICARD バリエーション"
             className="w-full max-w-5xl h-auto rounded-2xl shadow-2xl"
           />

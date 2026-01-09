@@ -1,7 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const Section9 = () => {
+  const { t } = useTranslation();
   return (
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-5">
@@ -14,7 +16,7 @@ const Section9 = () => {
           className="mb-12"
         >
           <img
-            src="/imgs/social-activity.png"
+            src={`${import.meta.env.BASE_URL}imgs/social-activity.png`}
             alt="社会活動と国際貢献"
             className="w-full h-auto rounded-3xl shadow-2xl"
           />
@@ -31,10 +33,10 @@ const Section9 = () => {
             className="space-y-4"
           >
             <p className="text-sm text-cyan-600 font-semibold tracking-widest uppercase">
-              SOCIAL ACTIVITY
+              {t('section9.label')}
             </p>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-              社会活動と国際貢献
+              {t('section9.title')}
             </h2>
           </motion.div>
 
@@ -47,7 +49,7 @@ const Section9 = () => {
             className="flex items-center"
           >
             <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-              オオカミプロジェクトを通じて、年間11,000頭いると言われている殺処分される動物たちを救う基金を設立、もしくは動物保護団体と連携し支援することでより良い社会の実現をお手伝いします。
+              {t('section9.description')}
             </p>
           </motion.div>
         </div>

@@ -1,0 +1,167 @@
+{
+  "lang": "en",
+  "crossBorderModal": {
+    "title": "Cross-border Services Restrictions",
+    "paragraph1": "You are attempting to access our website from an IP address outside of Hong Kong.",
+    "paragraph2": "Please be aware that promoting or distributing our products or services outside of Hong Kong may require a specific license. The content of this website is intended solely for Hong Kong residents who are domiciled in Hong Kong.",
+    "paragraph3": "If you are a resident outside of Hong Kong and do not wish to proceed, kindly close this page. By clicking \"Continue,\" you confirm that you have read and understood the above statement and that you are accessing this website on your own initiative, without any active promotion or solicitation from Okami Project.",
+    "continueButton": "CONTINUE"
+  },
+  "header": {
+    "home": "Home",
+    "features": "Features",
+    "howToUse": "How to Use",
+    "news": "News",
+    "company": "Company",
+    "apply": "Apply"
+  },
+  "companyPage": {
+    "subtitle": "Company Information",
+    "whoWeAre": {
+      "title": "WHO WE ARE",
+      "subtitle": "About Us",
+      "heading1": "Creating a World Where\nEveryone Lives Doing What They Love\nWith Smiles on Their Faces",
+      "paragraph1": "We believe that by living each day with passion, we can achieve both self-realization and social contribution.",
+      "paragraph2": "We continue to challenge ourselves daily to create a world where everyone can work authentically.",
+      "heading2": "Social Activities and International Contribution",
+      "paragraph3": "Through the Okami Project, we help create a better society by establishing a fund to save animals from euthanasia, which is said to number 11,000 annually, or by partnering with and supporting animal protection organizations.",
+      "paragraph4": "Specifically, a portion of Okami Coin used as transactions when using the Okami Card will be utilized for social contribution activities."
+    },
+    "projects": {
+      "title": "OKAMI PROJECTS",
+      "subtitle": "Okami Project",
+      "heading": "Making Everyone Happy\nThrough OKAMI PROJECT",
+      "paragraph": "This means that by using the card\nand holding Okami Coin,\nyou are contributing to society."
+    },
+    "members": {
+      "title": "MEMBER",
+      "subtitle": "Team Members",
+      "osada": {
+        "name": "Tadachiyo Osada",
+        "bio": "Born October 1956\nBecame Managing Executive Officer of MUFG Bank, Japan's largest megabank, in 2010, and was appointed Representative Director of the same bank in 2012.\n He led retail operations for the entire MUFG Group, including MUFG Bank, overseeing consumer finance businesses including credit card operations at group companies such as MUFG NICOS.\n He also has a deep interest in cutting-edge fields such as AI and Web 3.0, serving as a director of the Metaverse Promotion Council and the Generative AI Utilization and Promotion Association."
+      },
+      "kiuchi": {
+        "name": "Masatane Kiuchi",
+        "bio": "Born October 1964. Born as the great-great-grandson of Yataro Iwasaki, the founder of Mitsubishi Corporation, Japan's largest conglomerate group, Masatane Kiuchi himself joined Mitsubishi Corporation.\n He continues to serve as an active executive at Mitsubishi Corporation. Eiichi Shibusawa, the founder of Japan's first bank, \"The First National Bank,\" is Masatane Kiuchi's great-grandfather."
+      },
+      "mochizuki": {
+        "name": "Kousei Mochizuki",
+        "bio": "Born August 1974. Dubai resident, Representative of Okami Foundation\n He transformed from a poor salaryman with 6 million yen in debt to developing a unique method of earning 300 million yen annually on his own.\nHe relocated from Singapore to Dubai in 2022 and engages in cryptocurrency and real estate investments. Author of 6 books."
+      }
+    }
+  },
+  "homePage": {
+    "section1": {
+      "subtitle": "Cryptocurrency Compatible OKAMICARD",
+      "title": "World's Premier\nPrivate\nSecurity Card",
+      "feature1": "Store all cryptocurrencies",
+      "feature2": "Linked with dedicated wallet",
+      "feature3": "Direct payment without converting\nto fiat currency"
+    },
+    "section2": {
+      "title": "Pick UP News",
+      "subtitle": "Latest News"
+    },
+    "section3": {
+      "title": "Future",
+      "subtitle": "OKAMI CARD Features"
+    }
+  },
+  "features": {
+    "feature1": {
+      "title": "Direct payment without fiat currency conversion",
+      "description": "The Okami Card is linked to a dedicated wallet that can store all cryptocurrencies including Dogecoin and Shiba Inu Coin, allowing direct payment without converting to your country's fiat currency."
+    },
+    "feature2": {
+      "title": "AirDrop feature with premium benefits for higher-tier cards",
+      "description": "OKAMI CARD features an AirDrop function, with higher-tier cards offering more advantageous and beneficial terms of use."
+    },
+    "feature3": {
+      "title": "Built-in value appreciation mechanism",
+      "description": "The more the card is used worldwide, the fewer Okami Coins remain in circulation, increasing the value per coin."
+    }
+  },
+  "section4": {
+    "oldSystem": "Traditional",
+    "centralized": "Centralized",
+    "centralizedDesc": "Banks Control\nYour Money",
+    "newSystem": "Modern",
+    "decentralized": "Decentralized",
+    "decentralizedDesc": "Distributed via\nBlockchain Technology"
+  },
+  "section5": {
+    "title": "Merit",
+    "subtitle": "Higher tiers offer better and more advantageous terms",
+    "description": "Coins increase like interest through the AirDrop function!"
+  },
+  "section6": {
+    "title": "REASON WHY",
+    "subtitle": "5 Key Points Only OKAMI CARD Can Deliver"
+  },
+  "reasons": {
+    "reason1": {
+      "title": "Manage All Coins with\nOkami Wallet",
+      "description": "Traditional wallets required multiple wallets depending on the type of coins you hold, but with the Okami Card dedicated wallet, everything is complete in one.",
+      "feature1": "Manage all coins in one wallet",
+      "feature2": "Reduced risk of losing login information"
+    },
+    "reason2": {
+      "title": "Partnership with International Brands\nUsable Worldwide!",
+      "description": "Through partnerships with the most famous international brands, dining and shopping are possible all over the world."
+    },
+    "reason3": {
+      "title": "Cash Withdrawals in Japanese Yen\nAvailable at ATMs Nationwide",
+      "description": "With the card, you can withdraw Japanese yen in cash from ATMs all over Japan anytime, anywhere."
+    },
+    "reason4": {
+      "title": "Compatible with Cashless Payments\nSuch as Apple Pay!",
+      "description": "By registering the card on your smartphone in advance, cashless payments are possible without the card. The wallet and card fit into one smartphone, making it very convenient to use."
+    },
+    "reason5": {
+      "title": "Highest Compliance Standards",
+      "description": "OKAMI CARD is operated by an organization established, licensed and regulated in Hong Kong, and is a legal financial product that executes real-time blockchain transactions."
+    }
+  },
+  "section7": {
+    "title": "Unlimited Settlement Amount +\nUnlimited Withdrawals",
+    "subtitle": "The titanium card [Nihon Okami Card]\nwhose acquisition method remains shrouded in mystery",
+    "cta": "Only for Platinum Holders...\nThe Possibility of an Invitation!?",
+    "button": "Check Details"
+  },
+  "section8": {
+    "title": "FLOW",
+    "subtitle": "Steps to Application",
+    "notice": "Eligible age is 20 years or older.\nApplications from minors are not accepted.\nPlease deposit by the end of the month using cryptocurrency (USDT or Ethereum)."
+  },
+  "flow": {
+    "step1": {
+      "title": "Reservation Application",
+      "description": "First, submit a reservation application through the form."
+    },
+    "step2": {
+      "title": "Register on Dedicated LINE/Chat",
+      "description": "Register on the dedicated account that will be provided later."
+    },
+    "step3": {
+      "title": "Transfer to Designated Account",
+      "description": "Send USDT or Ethereum to the designated account."
+    }
+  },
+  "section9": {
+    "label": "SOCIAL ACTIVITY",
+    "title": "Social Activities and International Contribution",
+    "description": "Through the Okami Project, we help create a better society by establishing a fund to save animals from euthanasia, which is said to number 11,000 annually, or by partnering with and supporting animal protection organizations."
+  },
+  "section10": {
+    "title": "Join the Okami Project\nand Change the World\nTogether?",
+    "subtitle": "For applications, please contact the following LINE account or your referrer.",
+    "button": "Contact via LINE"
+  },
+  "footer": {
+    "copyright": "© Copyright OKAMI CARD All Rights Reserved"
+  },
+  "blogPage": {
+    "title": "What's NEWS",
+    "subtitle": "Latest News"
+  }
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import Header from '../components/Header';
 import Section1 from '../components/Section1';
 import Section2 from '../components/Section2';
@@ -11,13 +12,17 @@ import Section8 from '../components/Section8';
 import Section9 from '../components/Section9';
 import Section10 from '../components/Section10';
 import Footer from '../components/Footer';
+import CrossBorderModal from '../components/CrossBorderModal';
 
 const HomePage = () => {
+  const { i18n } = useTranslation();
   return (
     <div className="home-page">
+      <CrossBorderModal />
       <Header />
       <Section1 />
-      <Section2 />
+      {/* Section2（ニュース）は日本語のみ表示 */}
+      {i18n.language === 'ja' && <Section2 />}
       <Section3 />
       <Section4 />
       <Section5 />
