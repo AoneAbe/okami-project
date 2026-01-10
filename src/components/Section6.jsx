@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { reasonsData } from '../data/reasonsData';
 
 const Section6 = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -106,7 +106,7 @@ const Section6 = () => {
           className="mt-20 flex justify-center"
         >
           <img
-            src={`${import.meta.env.BASE_URL}imgs/card-variation-${t('lang')}.png`}
+            src={`${import.meta.env.BASE_URL}imgs/card-variation-${i18n.language}.png`}
             alt="OKAMICARD バリエーション"
             className="w-full max-w-5xl h-auto rounded-2xl shadow-2xl"
           />

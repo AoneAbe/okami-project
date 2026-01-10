@@ -7,7 +7,7 @@ import SubMV from '../components/SubMV';
 import Footer from '../components/Footer';
 
 const CompanyPage = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const sectionVariants = {
     hidden: { opacity: 0, y: 30 },
     visible: {
@@ -129,7 +129,7 @@ const CompanyPage = () => {
             className="flex justify-center mb-12"
           >
             <img
-              src={`${import.meta.env.BASE_URL}imgs/project-${t('lang')}.png`}
+              src={`${import.meta.env.BASE_URL}imgs/project-${i18n.language}.png`}
               alt="OKAMI PROJECTS"
               className="w-full max-w-4xl h-auto"
             />
