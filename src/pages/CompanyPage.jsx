@@ -129,7 +129,7 @@ const CompanyPage = () => {
             className="flex justify-center mb-12"
           >
             <img
-              src={`${import.meta.env.BASE_URL}imgs/project-${i18n.language}.png`}
+              src={`${import.meta.env.BASE_URL}imgs/project-${i18n.language}.png?v=2`}
               alt="OKAMI PROJECTS"
               className="w-full max-w-4xl h-auto"
             />
