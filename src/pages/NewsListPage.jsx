@@ -29,7 +29,7 @@ const NewsListPage = () => {
 
   return (
     <div className="blog-page">
-      <Header />
+      <Header disableLanguageSwitcher={true} />
       <SubMV title="What's NEWS" subtitle="最新ニュース" />
 
       {/* ニュース一覧 */}

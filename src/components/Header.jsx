@@ -2,11 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
-const Header = () => {
+const Header = ({ disableLanguageSwitcher = false }) => {
   const { t, i18n } = useTranslation();
 
   const changeLanguage = (lang) => {
-    i18n.changeLanguage(lang);
+    if (!disableLanguageSwitcher) {
+      i18n.changeLanguage(lang);
+    }
   };
 
   return (
@@ -57,24 +59,33 @@ const Header = () => {
         <div className="flex items-center bg-black/90 px-5 py-2 rounded-full gap-4">
           <button
             onClick={() => changeLanguage('en')}
+            disabled={disableLanguageSwitcher}
             className={`text-sm text-white transition-opacity whitespace-nowrap ${
-              i18n.language === 'en' ? 'opacity-100' : 'opacity-60 hover:opacity-100'
+              disableLanguageSwitcher
+                ? 'opacity-40 cursor-not-allowed'
+                : i18n.language === 'en' ? 'opacity-100' : 'opacity-60 hover:opacity-100'
             }`}
           >
             English
           </button>
           <button
             onClick={() => changeLanguage('ja')}
+            disabled={disableLanguageSwitcher}
             className={`text-sm text-white transition-opacity whitespace-nowrap ${
-              i18n.language === 'ja' ? 'opacity-100' : 'opacity-60 hover:opacity-100'
+              disableLanguageSwitcher
+                ? 'opacity-40 cursor-not-allowed'
+                : i18n.language === 'ja' ? 'opacity-100' : 'opacity-60 hover:opacity-100'
             }`}
           >
             日本語
           </button>
           <button
             onClick={() => changeLanguage('zh')}
+            disabled={disableLanguageSwitcher}
             className={`text-sm text-white transition-opacity whitespace-nowrap ${
-              i18n.language === 'zh' ? 'opacity-100' : 'opacity-60 hover:opacity-100'
+              disableLanguageSwitcher
+                ? 'opacity-40 cursor-not-allowed'
+                : i18n.language === 'zh' ? 'opacity-100' : 'opacity-60 hover:opacity-100'
             }`}
           >
             中文

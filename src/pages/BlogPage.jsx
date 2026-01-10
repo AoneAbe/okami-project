@@ -21,7 +21,7 @@ const BlogPage = () => {
 
   return (
     <div className="blog-page">
-      <Header />
+      <Header disableLanguageSwitcher={true} />
       <SubMV title={t('blogPage.title')} subtitle={t('blogPage.subtitle')} />
 
       {/* ニュース記事一覧 */}
