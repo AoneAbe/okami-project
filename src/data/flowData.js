@@ -1,20 +1,20 @@
 export const flowData = [
   {
     id: 1,
-    image: 'imgs/flow1.jpg',
-    title: '予約申込み',
-    description: 'まずはフォームより予約申し込みを行います。',
+    image: 'imgs/flow2.jpg',
+    title: '公式LINEに登録',
+    description: 'まずはLINEで友達追加。',
   },
   {
     id: 2,
-    image: 'imgs/flow2.jpg',
-    title: '専用LINE/Chatに登録',
-    description: '後日案内される専用アカウントに登録します。',
+    image: 'imgs/cards.png',
+    title: 'カードのお申込み',
+    description: '購入されたいカードをお選びください。',
   },
   {
     id: 3,
-    image: 'imgs/flow3.jpg',
-    title: '指定口座へ送金',
-    description: 'USDTもしくはイーサリアムを指定口座に送信。',
+    image: 'imgs/mexc-1.png',
+    title: 'オオカミウォレット開設',
+    description: 'オオカミコインを購入してください。',
   },
 ];

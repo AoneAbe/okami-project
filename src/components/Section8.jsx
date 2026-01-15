@@ -2,10 +2,16 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { flowData } from '../data/flowData';
 
 const Section8 = () => {
   const { t } = useTranslation();
+
+  const flowSteps = [
+    { id: 1, image: 'imgs/flow2.jpg' },
+    { id: 2, image: 'imgs/cards.png' },
+    { id: 3, image: 'imgs/mexc-1.png' },
+  ];
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -51,7 +57,7 @@ const Section8 = () => {
           viewport={{ once: true, margin: '-100px' }}
           className="flex flex-col md:flex-row items-center justify-center gap-8"
         >
-          {flowData.map((flow, index) => (
+          {flowSteps.map((flow, index) => (
             <React.Fragment key={flow.id}>
               {/* フローカード */}
               <motion.div
@@ -84,7 +90,7 @@ const Section8 = () => {
               </motion.div>
 
               {/* 矢印（最後のアイテムの後には表示しない） */}
-              {index < flowData.length - 1 && (
+              {index < flowSteps.length - 1 && (
                 <motion.div
                   initial={{ opacity: 0, scale: 0.5 }}
                   whileInView={{ opacity: 1, scale: 1 }}
@@ -97,7 +103,7 @@ const Section8 = () => {
               )}
 
               {/* モバイル用矢印（縦向き） */}
-              {index < flowData.length - 1 && (
+              {index < flowSteps.length - 1 && (
                 <motion.div
                   initial={{ opacity: 0, scale: 0.5 }}
                   whileInView={{ opacity: 1, scale: 1 }}

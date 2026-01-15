@@ -13,7 +13,11 @@
     "howToUse": "How to Use",
     "news": "News",
     "company": "Company",
-    "apply": "Apply"
+    "apply": "Apply",
+    "card": "Okami Card",
+    "lineup": "Card Lineup",
+    "blog": "Blog",
+    "contact": "Contact"
   },
   "companyPage": {
     "subtitle": "Company Information",
@@ -65,6 +69,108 @@
     "section3": {
       "title": "Future",
       "subtitle": "OKAMI CARD Features"
+    },
+    "featuresSection": {
+      "title": "6 Key Features of Okami Card",
+      "features": [
+        {
+          "title": "Partnered with VISA, Usable Worldwide",
+          "description": "Partnered with international brand VISA for global usage. Through VISA partnership, dining and shopping are available at over 150 million stores worldwide."
+        },
+        {
+          "title": "Payment Possible with All Cryptocurrencies",
+          "description": "Okami Card is a credit card that allows cryptocurrency payments. Compatible with subscription payments such as rent and utilities, which are difficult with debit cards. Starting with Bitcoin and Ethereum, we plan to gradually support all major altcoins."
+        },
+        {
+          "title": "Manage All Coins with Okami Wallet",
+          "description": "Okami Wallet features high-performance security. Manage all coins in one wallet, avoiding the risk of losing login information."
+        },
+        {
+          "title": "No Credit Check Required, No Annual Fee",
+          "description": "No annual fee, a credit card that can use cryptocurrencies like Bitcoin."
+        },
+        {
+          "title": "Withdraw Fiat Currency from ATMs Worldwide",
+          "description": "Anytime, anywhere, withdraw the local currency in cash from ATMs around the world."
+        },
+        {
+          "title": "Cashless Payment Without Card",
+          "description": "Cashless payment possible without the card."
+        }
+      ]
+    },
+    "cardVariationSection": {
+      "title": "CARD LINEUP"
+    },
+    "socialContributionSection": {
+      "title": "The More You Use,\nThe More You Contribute to Society",
+      "description": "Okami Card is <accent>a social contribution card where everyday payments directly support animal protection</accent>. A portion of transaction fees is donated to <accent>rescue activities that save approximately 11,000 animals from euthanasia annually</accent>. These efforts have been highly recognized, receiving <accent>certificates of appreciation and awards from multiple private organizations and Governor Yoshimura of Osaka Prefecture</accent>.",
+      "highlight1": "Part of transaction fees donated to animal protection and charitable activities",
+      "highlight2": "Anyone can contribute to society effortlessly just by using the card"
+    },
+    "expoPartnerSection": {
+      "title": "Official Partner Promoting Okami Project to the World",
+      "description": "At the 2025 World Exposition (Expo 2025 Osaka, Kansai), we were <accent>selected as an official partner of the Osaka Healthcare Pavilion</accent>. <accent>During the expo, we held three collaborative events with celebrities, renowned artists, and influencers, promoting the Okami Project to over 29 million visitors</accent>.",
+      "highlight1": "Official Partner of Expo 2025 Osaka, Kansai",
+      "highlight2": "Promoting new forms of payment and social contribution to the world"
+    },
+    "cryptoSection": {
+      "title": "Listed on MEXC, Major Global Cryptocurrency Exchange,\nand Partnered with Domestic Listed Companies",
+      "description": "Okami Coin (OKM) was <accent>listed on MEXC in February 2025</accent>, one of the world's leading cryptocurrency exchanges with over 36 million registered users. Furthermore, with <accent>adoption as shareholder benefits at ABC Corporation (Tokyo Stock Exchange Standard Market)</accent> and <accent>partnership with BLOCKSMITH & Co.</accent>, we continue advancing collaborations with leading domestic and international companies to develop initiatives for broader recognition and value creation for our investors.",
+      "highlight1": "Listed in February 2025",
+      "highlight2": "Adopted as shareholder benefits at ABC Corporation (Tokyo Stock Exchange Standard Market)",
+      "highlight3": "Partnership with BLOCKSMITH & Co."
+    },
+    "cardUsageSection": {
+      "section1": {
+        "title": "Okami Coin Required for\nOkami Card Usage",
+        "description": "To use the Okami Card, you need Okami Coin (OKM). OKM used for card payments is <accent>burned (incinerated) through an adopted mechanism</accent>, gradually reducing the market supply. As daily card usage increases, OKM consumption and burning progress, resulting in a <accent>design that is expected to potentially lead to future price appreciation through improved supply-demand balance</accent>.",
+        "highlight1": "Burning (incineration) mechanism adopted",
+        "highlight2": "Design expected to potentially lead to future price appreciation through improved supply-demand balance"
+      },
+      "section2": {
+        "title": "Okami Card Fees at\nIndustry-Leading Low Rates!",
+        "description": "The main revenue source for the Okami Project is not transaction fees, but <accent>growth in market capitalization from holding 70% of the total OKM coin issuance</accent>. Therefore, <accent>card transaction fees achieve industry-leading low rates of \"1.0% to\"</accent> in the cryptocurrency card industry. Note that fees vary depending on card rank (GREEN/GOLD/PLATINUM/BLACK, etc.).",
+        "highlight1": "Growth in market capitalization from holding 70% of total Okami Coin (OKM) issuance",
+        "highlight2": "Card transaction fees achieve industry-leading low rates of \"1.0% to\"",
+        "feeTableTitle": "Fee Schedule by Card Type",
+        "virtualGreenCard": "Virtual (Green) Card",
+        "goldCard": "Gold Card",
+        "platinumCard": "Platinum Card",
+        "blackCard": "Black Card",
+        "feeNote": "* VISA fees apply in addition to the above fees"
+      }
+    },
+    "scratchSection": {
+      "title": "Okami Scratch:\nThe More You Use,\nThe More Chances to Win Premium Prizes",
+      "description": "The \"Okami Scratch\" program, available based on Okami Card usage, <accent>adopts a mechanism where your chances of winning increase the more you use the card</accent>. Get scratches through daily payments and enjoy chances to win <accent>premium prizes including luxury goods, special experiences, and exclusive benefits</accent>. Excitement grows with every payment, and as you enjoy using the card, value and benefits accumulate—this is the unique reward program of Okami Card.",
+      "highlight1": "Mechanism adopted where chances increase the more you use the card",
+      "highlight2": "Chances to win premium prizes including luxury goods, special experiences, and exclusive benefits"
+    },
+    "goodsSection": {
+      "title": "Promoting Okami Brand to\nAll Generations Through\nOriginal Merchandise",
+      "description": "Through the development of original merchandise including apparel, accessories, and lifestyle goods, the Okami Project <accent>promotes the Okami brand's worldview and message</accent> to a wide range of generations from children to adults. With products that naturally blend into daily life while maintaining design quality and character appeal, we expand connections with fans while working toward <accent>brand recognition and value creation as a globally beloved brand</accent>.",
+      "highlight1": "Promoting the Okami brand's worldview and message",
+      "highlight2": "Brand recognition and value creation as a globally beloved brand"
+    },
+    "messageSection": {
+      "title": "Message from the Representative",
+      "message1": "Bitcoin has grown approximately 10-fold in price over the past five years, recording an astounding annual average growth rate of approximately 70-80%. The cryptocurrency market has now become an entity that significantly changes the world's financial structure, and major payment companies such as VISA and Mastercard are once again focusing on blockchain and cryptocurrency payments from the perspectives of faster cross-border payments, improved security, and inflation hedging.",
+      "message2": "By utilizing blockchain, security costs can be reduced to less than 1/10,000 of traditional methods, realizing a more robust security and borderless payment environment. In a market environment with an annual average growth rate of 88%, there is even the possibility that asset value will continue to grow despite usage. This is the innovation of cryptocurrency credit cards.",
+      "message3": "In this growing field, the Okami Project makes it our <accent>mission to realize a \"system where support is generated just by using it\"</accent> by combining animal protection with payment infrastructure. With the trust earned from the world through business partnerships and adoptions with listed companies such as KLab and GFA, and achievements as an official Expo partner, we promote the \"infrastructure of donations\" through blockchain, aiming to <accent>realize a world where the future of people, animals, and children becomes kinder and richer</accent>.",
+      "ceo": "Representative of Okami Project",
+      "ceoName": "Kosei Mochizuki",
+      "highlight1": "Mission to realize a \"system where support is generated just by using it\"",
+      "highlight2": "Realizing a world where the future of people, animals, and children becomes kinder and richer"
+    },
+    "companyInfoSection": {
+      "title": "Company Information",
+      "agent": "Okami Card Japan Master Agent",
+      "companyName": "Motti Co., Ltd.",
+      "address": "Address",
+      "postalCode": "〒108-0075",
+      "addressLine1": "Shinagawa Grand Central Tower 8F",
+      "addressLine2": "2-16-4 Konan, Minato-ku, Tokyo"
     }
   },
   "features": {
@@ -131,20 +237,20 @@
   "section8": {
     "title": "FLOW",
     "subtitle": "Steps to Application",
-    "notice": "Eligible age is 20 years or older.\nApplications from minors are not accepted.\nPlease deposit by the end of the month using cryptocurrency (USDT or Ethereum)."
+    "notice": "Eligible age is 20 years or older.\nApplications from minors are not accepted.\nOkami Coin is required separately to use the Okami Card."
   },
   "flow": {
     "step1": {
-      "title": "Reservation Application",
-      "description": "First, submit a reservation application through the form."
+      "title": "Register on Official LINE",
+      "description": "First, add us as a friend on LINE."
     },
     "step2": {
-      "title": "Register on Dedicated LINE/Chat",
-      "description": "Register on the dedicated account that will be provided later."
+      "title": "Apply for Card",
+      "description": "Select the card you wish to purchase."
     },
     "step3": {
-      "title": "Transfer to Designated Account",
-      "description": "Send USDT or Ethereum to the designated account."
+      "title": "Open Okami Wallet",
+      "description": "Purchase Okami Coin."
     }
   },
   "section9": {

@@ -13,7 +13,11 @@
     "howToUse": "使用方法",
     "news": "新聞",
     "company": "公司信息",
-    "apply": "申請"
+    "apply": "申請",
+    "card": "大神卡",
+    "lineup": "卡片陣容",
+    "blog": "部落格",
+    "contact": "聯絡我們"
   },
   "companyPage": {
     "subtitle": "公司信息",
@@ -65,6 +69,108 @@
     "section3": {
       "title": "Future",
       "subtitle": "OKAMI CARD的特點"
+    },
+    "featuresSection": {
+      "title": "大神卡的6大特點",
+      "features": [
+        {
+          "title": "與國際品牌VISA合作，全球通用",
+          "description": "與國際品牌VISA合作，全球通用。通過與VISA的合作，可在全球超過1億5千萬家店鋪用餐和購物。"
+        },
+        {
+          "title": "可使用所有加密貨幣支付",
+          "description": "大神卡是一張可以使用加密資產結算的信用卡。還支持租金和水電費等借記卡難以應對的訂閱付款。從比特幣和以太坊開始，今後計劃逐步支持包括主要山寨幣在內的所有加密資產。"
+        },
+        {
+          "title": "用大神錢包管理所有幣種",
+          "description": "大神錢包採用高性能安全防護。可在一個錢包中管理所有幣種，避免登錄信息丟失的風險。"
+        },
+        {
+          "title": "無需審核且無年費",
+          "description": "無年費，可使用比特幣等加密貨幣的信用卡。"
+        },
+        {
+          "title": "可在全球ATM提取法定貨幣",
+          "description": "隨時隨地可從全球ATM以現金形式提取該國貨幣。"
+        },
+        {
+          "title": "無需卡片即可無現金支付",
+          "description": "無需卡片即可進行無現金支付。"
+        }
+      ]
+    },
+    "cardVariationSection": {
+      "title": "CARD LINEUP"
+    },
+    "socialContributionSection": {
+      "title": "使用越多\n對社會貢獻越大",
+      "description": "大神卡是<accent>日常支付直接支持動物保護的社會貢獻型卡片</accent>。手續費的一部分作為捐款，<accent>用於拯救每年約11,000頭面臨安樂死的動物的保護活動</accent>。這些努力獲得了高度評價，至今已獲得<accent>多個民間組織和大阪府吉村知事的感謝狀與表彰</accent>。",
+      "highlight1": "手續費的一部分捐贈給動物保護和慈善活動",
+      "highlight2": "任何人只需使用卡片即可輕鬆為社會做貢獻"
+    },
+    "expoPartnerSection": {
+      "title": "作為大阪世博會官方合作夥伴向世界推廣",
+      "description": "在2025年舉辦的國際博覽會（大阪・關西世博會／EXPO2025）中，<accent>被選為大阪健康護理展館的官方合作夥伴</accent>。<accent>在展會期間，與藝人、知名藝術家、網紅合作舉辦了3次活動，向累計超過2900萬參觀者</accent>推廣了大神項目。",
+      "highlight1": "2025年大阪・關西世博會官方合作夥伴",
+      "highlight2": "向世界推廣新的支付形式和社會貢獻"
+    },
+    "cryptoSection": {
+      "title": "在全球主要加密貨幣交易所MEXC上市，\n與國內上市公司建立合作關係",
+      "description": "大神幣（OKM）在擁有超過3600萬註冊用戶的世界領先加密資產交易所「MEXC」<accent>於2025年2月上市</accent>。此外，<accent>在ABC株式會社（東京證券交易所標準市場）的股東優惠中被採用</accent>，以及<accent>與BLOCKSMITH & Co.建立合作關係</accent>等，在與國內外領先企業推進合作的同時，今後將繼續開展面向投資者的廣泛認知提升和價值創造舉措。",
+      "highlight1": "2025年2月上市",
+      "highlight2": "在ABC株式會社（東京證券交易所標準市場）的股東優惠中被採用",
+      "highlight3": "與BLOCKSMITH & Co.建立合作關係"
+    },
+    "cardUsageSection": {
+      "section1": {
+        "title": "使用大神卡需要\n大神幣",
+        "description": "要使用大神卡，您需要大神幣（OKM）。用於卡片支付的OKM<accent>採用銷毀（焚燒）機制</accent>，市場供應量逐步減少。隨著日常卡片使用的增加，OKM的消費和銷毀不斷推進，結果<accent>通過改善供需平衡，預期將來可能實現價格上漲的設計</accent>。",
+        "highlight1": "採用銷毀（焚燒）機制",
+        "highlight2": "通過改善供需平衡預期將來可能實現價格上漲的設計"
+      },
+      "section2": {
+        "title": "大神卡的手續費\n達到業界最低水平！",
+        "description": "大神項目的主要收入來源不是支付手續費，而是<accent>持有大神幣（OKM）總發行量的70%所帶來的市值增長</accent>。因此，<accent>卡片支付手續費在加密資產卡片行業中實現了最低水平的「1.0%～」</accent>。手續費根據卡片等級（GREEN/GOLD/PLATINUM/BLACK等）而有所不同。",
+        "highlight1": "持有大神幣（OKM）總發行量的70%所帶來的市值增長",
+        "highlight2": "卡片支付手續費在加密資產卡片行業中實現最低水平的「1.0%～」",
+        "feeTableTitle": "各卡片手續費一覽",
+        "virtualGreenCard": "虛擬（綠色）卡",
+        "goldCard": "金卡",
+        "platinumCard": "白金卡",
+        "blackCard": "黑卡",
+        "feeNote": "※除上述手續費外還會產生VISA手續費"
+      }
+    },
+    "scratchSection": {
+      "title": "大神刮刮樂：\n使用越多，\n越有機會贏得豪華獎品",
+      "description": "根據大神卡的使用情況可以參與的「大神刮刮樂」<accent>採用了使用卡片越多中獎機會越大的機制</accent>。通過日常支付獲得刮刮樂，享受贏得<accent>高級商品、特殊體驗、限定特典等豪華獎品</accent>的機會。每次支付都增加興奮感，通過享受使用而積累價值和特典，這是大神卡獨有的獎勵計劃。",
+      "highlight1": "採用使用卡片越多中獎機會越大的機制",
+      "highlight2": "有機會贏得高級商品、特殊體驗、限定特典等豪華獎品"
+    },
+    "goodsSection": {
+      "title": "通過獨特商品推廣\n向各年齡層\n推廣大神品牌",
+      "description": "大神項目通過服裝、配飾、生活雜貨等原創商品的開發，向從兒童到成人的廣泛年齡層<accent>推廣大神品牌的世界觀和信息</accent>。通過自然融入日常生活的設計性和角色性商品，在擴大與粉絲的接觸點的同時，致力於<accent>作為全球喜愛品牌的認知提升和價值創造</accent>。",
+      "highlight1": "推廣大神品牌的世界觀和信息",
+      "highlight2": "作為全球喜愛品牌的認知提升和價值創造"
+    },
+    "messageSection": {
+      "title": "代表致辭",
+      "message1": "比特幣在過去5年中價格增長了約10倍以上，年平均增長率達到約70~80%的驚人增長。加密資產市場現在已成為大幅改變世界金融結構的存在，VISA和Mastercard等支付巨頭也從加快跨境支付、提高安全性、對沖通脹的角度，再次關注區塊鏈和加密資產支付。",
+      "message2": "通過利用區塊鏈，安全成本可以降低到傳統方法的萬分之一以下，實現更強大的安全性和無國界的支付環境。在年平均增長率為88%的市場環境中，甚至存在即使使用資產價值仍然增長的可能性。這正是加密資產信用卡的創新性。",
+      "message3": "大神項目在這個增長領域中，將動物保護與支付基礎設施融合，<accent>以實現「使用即產生支援的機制」為使命</accent>。憑藉與KLab公司和GFA公司等上市公司的業務合作和採用、作為世博會官方合作夥伴的實績等來自世界的信賴，通過區塊鏈推進「捐贈的基礎設施化」，致力於<accent>實現人類、動物以及兒童的未來變得更溫暖更豐富的世界</accent>。",
+      "ceo": "大神項目代表",
+      "ceoName": "望月 高清",
+      "highlight1": "以實現「使用即產生支援的機制」為使命",
+      "highlight2": "實現人類、動物以及兒童的未來變得更溫暖更豐富的世界"
+    },
+    "companyInfoSection": {
+      "title": "公司信息",
+      "agent": "大神卡日本總代理",
+      "companyName": "Motti株式會社",
+      "address": "地址",
+      "postalCode": "〒108-0075",
+      "addressLine1": "東京都港區港南2-16-4",
+      "addressLine2": "品川Grand Central Tower 8F"
     }
   },
   "features": {
@@ -131,20 +237,20 @@
   "section8": {
     "title": "FLOW",
     "subtitle": "申請流程",
-    "notice": "適用年齡為20歲以上。\n未成年人不得申請。\n請在當月末前使用加密貨幣（USDT或以太坊）存款。"
+    "notice": "適用年齡為20歲以上。\n未成年人不得申請。\n使用大神卡需要另行準備大神幣。"
   },
   "flow": {
     "step1": {
-      "title": "預約申請",
-      "description": "首先通過表格進行預約申請。"
+      "title": "註冊官方LINE",
+      "description": "首先在LINE上添加好友。"
     },
     "step2": {
-      "title": "註冊專用LINE/Chat",
-      "description": "註冊稍後通知的專用帳戶。"
+      "title": "申請卡片",
+      "description": "請選擇您想購買的卡片。"
     },
     "step3": {
-      "title": "匯款至指定帳戶",
-      "description": "將USDT或以太坊發送至指定帳戶。"
+      "title": "開設大神錢包",
+      "description": "請購買大神幣。"
     }
   },
   "section9": {

@@ -6,50 +6,25 @@ import { CreditCard, Coins, Wallet, CheckCircle, Banknote, Smartphone } from 'lu
 const FeaturesSection = () => {
   const { t } = useTranslation();
 
-  const features = [
-    {
-      id: 1,
-      title: '国際ブランドVISAと提携し世界中で利用可能',
-      description: '国際ブランドVISAと提携し世界中で利用可能。VISAとの提携により全世界1億5千万件以上の店舗で飲食やショッピングが可能。',
-      icon: CreditCard,
-      gradient: 'from-blue-500 to-cyan-500'
-    },
-    {
-      id: 2,
-      title: '全ての暗号通貨で支払いが可能',
-      description: 'オオカミカードは、暗号資産で決済ができるクレジットカードです。デビットカードでは対応が難しい家賃や水道光熱費などのサブスクリプション支払いにも対応。ビットコインやイーサリアムをはじめ、今後は主要アルトコインを含むすべての暗号資産に順次対応していく予定です。',
-      icon: Coins,
-      gradient: 'from-purple-500 to-pink-500'
-    },
-    {
-      id: 3,
-      title: 'オオカミウォレットで全てのコインを管理',
-      description: 'オオカミウォレットは高性能セキュリティ対応。１つのウォレットで全コインを管理でき、ログイン情報の紛失リスクも避けられる。',
-      icon: Wallet,
-      gradient: 'from-green-500 to-emerald-500'
-    },
-    {
-      id: 4,
-      title: '審査不要で年会費もなし',
-      description: '年会費なし、ビットコインなどの暗号通貨が使えるクレジットカード。',
-      icon: CheckCircle,
-      gradient: 'from-orange-500 to-red-500'
-    },
-    {
-      id: 5,
-      title: '世界中のATMで法定通貨の引出可能',
-      description: 'いつでもどこでも世界中のATMからその国の通貨を現金で出金することが可能。',
-      icon: Banknote,
-      gradient: 'from-indigo-500 to-blue-500'
-    },
-    {
-      id: 6,
-      title: 'カード不要でキャッシュレス決済が可能',
-      description: 'カード不要でキャッシュレス決済が可能。',
-      icon: Smartphone,
-      gradient: 'from-cyan-500 to-teal-500'
-    }
+  const icons = [CreditCard, Coins, Wallet, CheckCircle, Banknote, Smartphone];
+  const gradients = [
+    'from-blue-500 to-cyan-500',
+    'from-purple-500 to-pink-500',
+    'from-green-500 to-emerald-500',
+    'from-orange-500 to-red-500',
+    'from-indigo-500 to-blue-500',
+    'from-cyan-500 to-teal-500'
   ];
+
+  const featuresData = t('homePage.featuresSection.features', { returnObjects: true });
+  const features = Array.isArray(featuresData)
+    ? featuresData.map((feature, index) => ({
+        ...feature,
+        id: index + 1,
+        icon: icons[index],
+        gradient: gradients[index]
+      }))
+    : [];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -73,7 +48,7 @@ const FeaturesSection = () => {
   };
 
   return (
-    <section className="py-24 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+    <section id="okami-card" className="py-24 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
       {/* 背景装飾 */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-cyan-400/10 rounded-full blur-3xl" />
@@ -90,7 +65,7 @@ const FeaturesSection = () => {
           className="text-center mb-20"
         >
           <h2 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-gray-900 via-cyan-800 to-blue-900 bg-clip-text text-transparent">
-            オオカミカードの6つの特徴
+            {t('homePage.featuresSection.title')}
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto rounded-full" />
         </motion.div>
