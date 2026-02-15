@@ -1,20 +1,42 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import './CrossBorderModal.css';
 
 const CrossBorderModal = () => {
   const [showModal, setShowModal] = useState(false);
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const prevLanguageRef = useRef(i18n.language);
 
+  // 言語変更を監視してモーダル表示を制御
   useEffect(() => {
-    const hasAccepted = localStorage.getItem('crossBorderAccepted');
+    const currentLang = i18n.language;
+    const prevLang = prevLanguageRef.current;
+
+    // 日本語の場合は表示しない
+    if (currentLang === 'ja') {
+      setShowModal(false);
+      prevLanguageRef.current = currentLang;
+      return;
+    }
+
+    // 日本語以外への初回アクセス（sessionStorageにフラグがない場合）
+    const hasAccepted = sessionStorage.getItem('crossBorderAccepted');
     if (!hasAccepted) {
       setShowModal(true);
+      prevLanguageRef.current = currentLang;
+      return;
     }
-  }, []);
+
+    // 言語が変更された場合（日本語以外への切り替え時は全て表示）
+    if (prevLang !== currentLang) {
+      setShowModal(true);
+    }
+
+    prevLanguageRef.current = currentLang;
+  }, [i18n.language]);
 
   const handleContinue = () => {
-    localStorage.setItem('crossBorderAccepted', 'true');
+    sessionStorage.setItem('crossBorderAccepted', 'true');
     setShowModal(false);
   };
 

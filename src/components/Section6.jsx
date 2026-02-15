@@ -106,7 +106,7 @@ const Section6 = () => {
           className="mt-20 flex justify-center"
         >
           <img
-            src={`${import.meta.env.BASE_URL}imgs/card-variation-${i18n.language}.png`}
+            src={`${import.meta.env.BASE_URL}imgs/site/card-variation-${i18n.language}.png`}
             alt="OKAMICARD バリエーション"
             className="w-full max-w-5xl h-auto rounded-2xl shadow-2xl"
           />

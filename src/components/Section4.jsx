@@ -48,7 +48,7 @@ const Section4 = () => {
             </p>
             <div className="flex justify-center">
               <img
-                src={`${import.meta.env.BASE_URL}imgs/system1.png`}
+                src={`${import.meta.env.BASE_URL}imgs/site/system1.png`}
                 alt="中央集権型システム"
                 className="w-48 h-auto"
               />
@@ -94,7 +94,7 @@ const Section4 = () => {
             </p>
             <div className="flex justify-center">
               <img
-                src={`${import.meta.env.BASE_URL}imgs/system2.png`}
+                src={`${import.meta.env.BASE_URL}imgs/site/system2.png`}
                 alt="分散型システム"
                 className="w-48 h-auto"
               />

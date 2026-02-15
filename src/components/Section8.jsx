@@ -7,9 +7,9 @@ const Section8 = () => {
   const { t } = useTranslation();
 
   const flowSteps = [
-    { id: 1, image: 'imgs/flow2.jpg' },
-    { id: 2, image: 'imgs/cards.png' },
-    { id: 3, image: 'imgs/mexc-1.png' },
+    { id: 1, image: 'imgs/site/flow2.jpg' },
+    { id: 2, image: 'imgs/site/cards.png' },
+    { id: 3, image: 'imgs/site/mexc-1.png' },
   ];
 
   const containerVariants = {
@@ -34,7 +34,7 @@ const Section8 = () => {
   };
 
   return (
-    <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
+    <section id="contact" className="py-24 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-5">
         {/* セクションタイトル */}
         <motion.div
@@ -55,7 +55,7 @@ const Section8 = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: '-100px' }}
-          className="flex flex-col md:flex-row items-center justify-center gap-8"
+          className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-8"
         >
           {flowSteps.map((flow, index) => (
             <React.Fragment key={flow.id}>
@@ -65,7 +65,7 @@ const Section8 = () => {
                 className="flex flex-col items-center text-center max-w-xs"
               >
                 {/* 画像 */}
-                <div className="w-64 h-64 rounded-full overflow-hidden mb-6 shadow-xl">
+                <div className="w-48 h-48 lg:w-64 lg:h-64 rounded-full overflow-hidden mb-6 shadow-xl">
                   <img
                     src={`${import.meta.env.BASE_URL}${flow.image}`}
                     alt={t(`flow.step${flow.id}.title`)}
@@ -96,7 +96,7 @@ const Section8 = () => {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.2 * (index + 1) }}
-                  className="hidden md:block flex-shrink-0"
+                  className="hidden lg:block flex-shrink-0"
                 >
                   <ArrowRight className="w-10 h-10 text-cyan-500" strokeWidth={2} />
                 </motion.div>
@@ -109,7 +109,7 @@ const Section8 = () => {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.2 * (index + 1) }}
-                  className="md:hidden"
+                  className="lg:hidden"
                 >
                   <ArrowRight className="w-8 h-8 text-cyan-500 rotate-90" strokeWidth={2} />
                 </motion.div>

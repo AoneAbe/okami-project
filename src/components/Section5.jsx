@@ -33,7 +33,7 @@ const Section5 = () => {
           className="flex justify-center"
         >
           <img
-            src={`${import.meta.env.BASE_URL}imgs/merit.png`}
+            src={`${import.meta.env.BASE_URL}imgs/site/merit.png`}
             alt="OKAMICARD メリット"
             className="w-full max-w-4xl h-auto shadow-2xl rounded-2xl"
           />

@@ -40,7 +40,7 @@ const ScratchSection = () => {
             className="space-y-8"
           >
             {/* 見出し */}
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+            <h2 className="text-3xl md:text-[45px] font-bold text-gray-900 leading-tight">
               {t('homePage.scratchSection.title')}
             </h2>
 
@@ -68,7 +68,7 @@ const ScratchSection = () => {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src={`${import.meta.env.BASE_URL}imgs/okami-scrach.jpg`}
+                src={`${import.meta.env.BASE_URL}imgs/site/okami-scrach.jpg`}
                 alt="オオカミスクラッチ"
                 className="w-full h-auto"
               />

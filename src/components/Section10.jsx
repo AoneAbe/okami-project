@@ -7,7 +7,7 @@ const Section10 = () => {
   return (
     <section
       className="py-32 bg-cover bg-center bg-no-repeat relative"
-      style={{ backgroundImage: `url('${import.meta.env.BASE_URL}imgs/line-join.jpg')` }}
+      style={{ backgroundImage: `url('${import.meta.env.BASE_URL}imgs/site/line-join.jpg')` }}
     >
       {/* 暗めのオーバーレイ */}
       <div className="absolute inset-0 bg-black/60" />
@@ -44,7 +44,7 @@ const Section10 = () => {
           className="flex justify-center"
         >
           <a
-            href="#"
+            href="https://line.me/R/ti/p/@558gmjld?ts=01110204&oat_content=url"
             className="inline-flex items-center gap-3 px-10 py-5 bg-[#06C755] hover:bg-[#05b34a] text-white font-bold text-lg rounded-full shadow-2xl transition-all duration-300 transform hover:scale-105"
           >
             {/* LINEアイコン */}

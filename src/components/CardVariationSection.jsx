@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
 const CardVariationSection = () => {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const cards = [
     {
@@ -166,20 +166,20 @@ const CardVariationSection = () => {
   };
 
   return (
-    <section id="card-lineup" className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-5">
+    <section id="card-lineup" className="py-12 lg:py-24 bg-white">
+      <div className="max-w-7xl mx-auto px-3 lg:px-5">
         {/* タイトル */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-8 lg:mb-16"
         >
-          <h2 className="text-5xl font-bold text-gray-900 mb-4 tracking-widest">
-            CARD LINEUP
+          <h2 className="text-2xl lg:text-5xl font-bold text-gray-900 mb-3 lg:mb-4 tracking-widest">
+            {t('homePage.cardVariationSection.title')}
           </h2>
-          <div className="w-32 h-1 bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto" />
+          <div className="w-20 lg:w-32 h-1 bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto" />
         </motion.div>
 
         {/* カードバリエーションテーブル */}
@@ -191,16 +191,16 @@ const CardVariationSection = () => {
           className="bg-white shadow-2xl overflow-hidden border border-white"
         >
           <div className="overflow-x-auto">
-            <table className="w-full border-collapse">
+            <table className="w-full border-collapse min-w-[600px]">
               <thead>
                 <tr className="bg-gray-100">
-                  <th className="p-6 text-left font-bold text-gray-900 border-b border-r border-white w-56">
+                  <th className="p-2 lg:p-6 text-left font-bold text-gray-900 border-b border-r border-white w-24 lg:w-56">
                     {/* 空白セル */}
                   </th>
                   {cards.map((card, index) => (
                     <th
                       key={card.id}
-                      className={`p-6 text-center border-b border-white ${
+                      className={`p-2 lg:p-6 text-center border-b border-white ${
                         index < cards.length - 1 ? 'border-r' : ''
                       }`}
                       style={getColumnGradientStyle(card, 'header')}
@@ -208,9 +208,9 @@ const CardVariationSection = () => {
                       {/* カード画像 */}
                       <div>
                         <img
-                          src={`${import.meta.env.BASE_URL}imgs/${card.cardImage}`}
+                          src={`${import.meta.env.BASE_URL}imgs/cards/${card.cardImage}`}
                           alt={`${card.name} Card`}
-                          className="w-48 h-auto mx-auto shadow-xl"
+                          className="w-20 lg:w-48 h-auto mx-auto shadow-xl"
                         />
                       </div>
                     </th>
@@ -220,22 +220,22 @@ const CardVariationSection = () => {
               <tbody>
                 {/* 1行目: キャッシュレス対応 */}
                 <tr className="border-b border-white">
-                  <td className="p-6 font-bold text-gray-900 bg-gray-100 border-r border-white">
+                  <td className="p-2 lg:p-6 font-bold text-[10px] lg:text-base text-gray-900 bg-gray-100 border-r border-white">
                     {getLabel(rows[0])}
                   </td>
                   {cards.map((card, index) => (
                     <td
                       key={card.id}
-                      className={`p-6 text-center ${
+                      className={`p-2 lg:p-6 text-center ${
                         index < cards.length - 1 ? 'border-r border-white' : ''
                       }`}
                       style={getColumnGradientStyle(card, 0)}
                     >
                       <div className="flex justify-center">
                         <img
-                          src={`${import.meta.env.BASE_URL}imgs/pay-type.png`}
+                          src={`${import.meta.env.BASE_URL}imgs/site/pay-type.png`}
                           alt="Apple Pay & Google Pay"
-                          className="h-6"
+                          className="h-4 lg:h-6"
                         />
                       </div>
                     </td>
@@ -244,18 +244,18 @@ const CardVariationSection = () => {
 
                 {/* 2行目: カードタイプ */}
                 <tr className="border-b border-white">
-                  <td className="p-6 font-bold text-gray-900 bg-gray-100 border-r border-white">
+                  <td className="p-2 lg:p-6 font-bold text-[10px] lg:text-base text-gray-900 bg-gray-100 border-r border-white">
                     {getLabel(rows[1])}
                   </td>
                   {cards.map((card, index) => (
                     <td
                       key={card.id}
-                      className={`p-6 text-center ${
+                      className={`p-2 lg:p-6 text-center ${
                         index < cards.length - 1 ? 'border-r border-white' : ''
                       }`}
                       style={getColumnGradientStyle(card, 1)}
                     >
-                      <span className="text-xl font-black text-gray-900">
+                      <span className="text-[10px] lg:text-xl font-black text-gray-900">
                         {getCardType(card)}
                       </span>
                     </td>
@@ -264,18 +264,18 @@ const CardVariationSection = () => {
 
                 {/* 3行目: 月額決済可能額 */}
                 <tr className="border-b border-white">
-                  <td className="p-6 font-bold text-gray-900 bg-gray-100 border-r border-white">
+                  <td className="p-2 lg:p-6 font-bold text-[10px] lg:text-base text-gray-900 bg-gray-100 border-r border-white">
                     {getLabel(rows[2])}
                   </td>
                   {cards.map((card, index) => (
                     <td
                       key={card.id}
-                      className={`p-6 text-center ${
+                      className={`p-2 lg:p-6 text-center ${
                         index < cards.length - 1 ? 'border-r border-white' : ''
                       }`}
                       style={getColumnGradientStyle(card, 2)}
                     >
-                      <div className="text-xl font-black text-gray-900">
+                      <div className="text-[10px] lg:text-xl font-black text-gray-900">
                         {getMonthlyLimit(card)}
                       </div>
                     </td>
@@ -284,18 +284,18 @@ const CardVariationSection = () => {
 
                 {/* 4行目: 月間キャッシング額 */}
                 <tr className="border-b border-white">
-                  <td className="p-6 font-bold text-gray-900 bg-gray-100 border-r border-white">
+                  <td className="p-2 lg:p-6 font-bold text-[10px] lg:text-base text-gray-900 bg-gray-100 border-r border-white">
                     {getLabel(rows[3])}
                   </td>
                   {cards.map((card, index) => (
                     <td
                       key={card.id}
-                      className={`p-6 text-center ${
+                      className={`p-2 lg:p-6 text-center ${
                         index < cards.length - 1 ? 'border-r border-white' : ''
                       }`}
                       style={getColumnGradientStyle(card, 3)}
                     >
-                      <div className="text-xl font-black text-gray-900">
+                      <div className="text-[10px] lg:text-xl font-black text-gray-900">
                         {getCashingLimit(card)}
                       </div>
                     </td>
@@ -304,18 +304,18 @@ const CardVariationSection = () => {
 
                 {/* 5行目: 付帯サービス */}
                 <tr>
-                  <td className="p-6 font-bold text-gray-900 bg-gray-100 border-r border-white">
+                  <td className="p-2 lg:p-6 font-bold text-[10px] lg:text-base text-gray-900 bg-gray-100 border-r border-white">
                     {getLabel(rows[4])}
                   </td>
                   {cards.map((card, index) => (
                     <td
                       key={card.id}
-                      className={`p-6 text-center ${
+                      className={`p-2 lg:p-6 text-center ${
                         index < cards.length - 1 ? 'border-r border-white' : ''
                       }`}
                       style={getColumnGradientStyle(card, 4)}
                     >
-                      <span className="text-xl font-black text-gray-900">
+                      <span className="text-[10px] lg:text-xl font-black text-gray-900">
                         {getServices(card)}
                       </span>
                     </td>

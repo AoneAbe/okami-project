@@ -64,7 +64,7 @@ const CompanyPage = () => {
             {/* 右：画像 */}
             <div className="rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src={`${import.meta.env.BASE_URL}imgs/we-are.jpg`}
+                src={`${import.meta.env.BASE_URL}imgs/site/we-are.jpg`}
                 alt="私たちについて"
                 className="w-full h-auto"
               />
@@ -82,7 +82,7 @@ const CompanyPage = () => {
             {/* 左：画像 */}
             <div className="rounded-2xl overflow-hidden shadow-2xl order-2 lg:order-1">
               <img
-                src={`${import.meta.env.BASE_URL}imgs/okami.jpg`}
+                src={`${import.meta.env.BASE_URL}imgs/site/okami.jpg`}
                 alt="社会活動と国際貢献"
                 className="w-full h-auto"
               />
@@ -129,7 +129,7 @@ const CompanyPage = () => {
             className="flex justify-center mb-12"
           >
             <img
-              src={`${import.meta.env.BASE_URL}imgs/project-${i18n.language}.png?v=2`}
+              src={`${import.meta.env.BASE_URL}imgs/site/project-${i18n.language}.png?v=2`}
               alt="OKAMI PROJECTS"
               className="w-full max-w-4xl h-auto"
             />
@@ -192,7 +192,7 @@ const CompanyPage = () => {
             <div className="lg:col-span-2">
               <div className="rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src={`${import.meta.env.BASE_URL}imgs/osada-tadachiyo.jpg`}
+                  src={`${import.meta.env.BASE_URL}imgs/site/osada-tadachiyo.jpg`}
                   alt="長田 忠千代"
                   className="w-full h-auto"
                 />
@@ -223,7 +223,7 @@ const CompanyPage = () => {
             <div className="lg:col-span-2">
               <div className="rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src={`${import.meta.env.BASE_URL}imgs/kiuchi-masatane.jpg`}
+                  src={`${import.meta.env.BASE_URL}imgs/site/kiuchi-masatane.jpg`}
                   alt="木内 正胤"
                   className="w-full h-auto"
                 />
@@ -254,7 +254,7 @@ const CompanyPage = () => {
             <div className="lg:col-span-2">
               <div className="rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src={`${import.meta.env.BASE_URL}imgs/mochizuki-kousei.jpg`}
+                  src={`${import.meta.env.BASE_URL}imgs/site/mochizuki-kousei.jpg`}
                   alt="望月 こうせい"
                   className="w-full h-auto"
                 />

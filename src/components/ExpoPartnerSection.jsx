@@ -7,20 +7,20 @@ const ExpoPartnerSection = () => {
 
   // 上部画像（1-8）
   const topImages = [
-    { id: 1, src: 'osaka-banpaku-op-1.jpg', rotate: 'rotate-3', delay: 0 },
-    { id: 2, src: 'osaka-banpaku-op-2.jpg', rotate: '-rotate-2', delay: 0.1 },
-    { id: 3, src: 'osaka-banpaku-op-3.jpeg', rotate: 'rotate-6', delay: 0.2 },
-    { id: 4, src: 'osaka-banpaku-op-4.JPG', rotate: '-rotate-4', delay: 0.3 },
-    { id: 5, src: 'osaka-banpaku-op-5.jpeg', rotate: 'rotate-2', delay: 0.4 },
-    { id: 6, src: 'osaka-banpaku-op-6.JPG', rotate: '-rotate-3', delay: 0.5 },
-    { id: 7, src: 'osaka-banpaku-op-7.JPG', rotate: 'rotate-4', delay: 0.6 },
-    { id: 8, src: 'osaka-banpaku-op-9.JPG', rotate: '-rotate-2', delay: 0.7 }
+    { id: 1, src: 'blog/osaka-banpaku-op-1.jpg', rotate: 'rotate-3', delay: 0 },
+    { id: 2, src: 'blog/osaka-banpaku-op-2.jpg', rotate: '-rotate-2', delay: 0.1 },
+    { id: 3, src: 'blog/osaka-banpaku-op-3.jpeg', rotate: 'rotate-6', delay: 0.2 },
+    { id: 4, src: 'blog/osaka-banpaku-op-4.JPG', rotate: '-rotate-4', delay: 0.3 },
+    { id: 5, src: 'blog/osaka-banpaku-op-5.jpeg', rotate: 'rotate-2', delay: 0.4 },
+    { id: 6, src: 'blog/osaka-banpaku-op-6.JPG', rotate: '-rotate-3', delay: 0.5 },
+    { id: 7, src: 'blog/osaka-banpaku-op-7.JPG', rotate: 'rotate-4', delay: 0.6 },
+    { id: 8, src: 'blog/osaka-banpaku-op-9.JPG', rotate: '-rotate-2', delay: 0.7 }
   ];
 
   // 下部左側画像（9-10）
   const bottomImages = [
-    { id: 9, src: 'osaka-banpaku-op-8.jpg', rotate: 'rotate-2', delay: 0.8 },
-    { id: 10, src: 'osaka-banpaku-op-10.png', rotate: '-rotate-3', delay: 0.9 }
+    { id: 9, src: 'blog/osaka-banpaku-op-8.jpg', rotate: 'rotate-2', delay: 0.8 },
+    { id: 10, src: 'blog/osaka-banpaku-op-10.png', rotate: '-rotate-3', delay: 0.9 }
   ];
 
   const imageVariants = {
@@ -102,6 +102,13 @@ const ExpoPartnerSection = () => {
             viewport={{ once: true }}
             className="bg-white/75 rounded-3xl p-8 shadow-2xl h-full flex flex-col justify-center"
           >
+            {/* ロゴ画像 */}
+            <img
+              src={`${import.meta.env.BASE_URL}imgs/site/osaka-banpaku-op.png`}
+              alt="大阪万博オフィシャルパートナー"
+              className="h-16 object-contain mb-4"
+            />
+
             {/* 見出し */}
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-6">
               {t('homePage.expoPartnerSection.title')}

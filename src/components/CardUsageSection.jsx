@@ -3,7 +3,17 @@ import { motion } from 'framer-motion';
 import { useTranslation, Trans } from 'react-i18next';
 
 const CardUsageSection = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  // 言語に応じた画像パスを取得
+  const getCardUsageImage = () => {
+    const imageMap = {
+      ja: 'imgs/site/card-usage-jp.png',
+      en: 'imgs/site/card-usage-en.png',
+      zh: 'imgs/site/card-usage-zh.png'
+    };
+    return imageMap[i18n.language] || imageMap.ja;
+  };
 
   const textVariants = {
     hidden: { opacity: 0, y: 30 },
@@ -46,7 +56,7 @@ const CardUsageSection = () => {
             </h2>
           </motion.div>
 
-          {/* 本文 */}
+          {/* 本文（左にロゴ、右にテキスト） */}
           <motion.div
             variants={textVariants}
             initial="hidden"
@@ -54,14 +64,25 @@ const CardUsageSection = () => {
             viewport={{ once: true }}
             className="max-w-4xl mx-auto mb-12"
           >
-            <p className="text-lg text-gray-700 leading-relaxed text-center">
-              <Trans
-                i18nKey="homePage.cardUsageSection.section1.description"
-                components={{
-                  accent: <span className="text-red-600 font-bold" />
-                }}
-              />
-            </p>
+            <div className="flex flex-col md:flex-row items-center gap-6 md:gap-10">
+              {/* 左側：ロゴ画像 */}
+              <div className="flex-shrink-0">
+                <img
+                  src={`${import.meta.env.BASE_URL}imgs/site/okami-coin-logo.png`}
+                  alt="オオカミコインロゴ"
+                  className="w-32 h-32 md:w-40 md:h-40 object-contain"
+                />
+              </div>
+              {/* 右側：テキスト */}
+              <p className="text-lg text-gray-700 leading-relaxed text-center md:text-left">
+                <Trans
+                  i18nKey="homePage.cardUsageSection.section1.description"
+                  components={{
+                    accent: <span className="text-red-600 font-bold" />
+                  }}
+                />
+              </p>
+            </div>
           </motion.div>
 
           {/* 画像 */}
@@ -73,7 +94,7 @@ const CardUsageSection = () => {
             className="max-w-5xl mx-auto"
           >
             <img
-              src={`${import.meta.env.BASE_URL}imgs/okami-coin.png`}
+              src={`${import.meta.env.BASE_URL}imgs/site/okami-coin.png`}
               alt="オオカミコイン"
               className="w-full h-auto rounded-2xl shadow-2xl"
             />
@@ -113,50 +134,19 @@ const CardUsageSection = () => {
             </p>
           </motion.div>
 
-          {/* 画像と手数料一覧 */}
+          {/* カード利用画像（言語別） */}
           <motion.div
             variants={imageVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-10 gap-8 items-center"
+            className="max-w-5xl mx-auto"
           >
-            {/* 左側：カード画像（60%） */}
-            <div className="lg:col-span-6">
-              <img
-                src={`${import.meta.env.BASE_URL}imgs/cards.png`}
-                alt="オオカミカード"
-                className="w-full h-auto rounded-2xl shadow-2xl"
-              />
-            </div>
-
-            {/* 右側：手数料一覧（40%） */}
-            <div className="lg:col-span-4 bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-2xl p-8 shadow-xl">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-                {t('homePage.cardUsageSection.section2.feeTableTitle')}
-              </h3>
-              <div className="space-y-4">
-                <div className="flex justify-between items-center pb-3 border-b border-gray-200">
-                  <span className="text-gray-700 font-medium">{t('homePage.cardUsageSection.section2.virtualGreenCard')}</span>
-                  <span className="text-xl font-bold text-green-600">4.0％</span>
-                </div>
-                <div className="flex justify-between items-center pb-3 border-b border-gray-200">
-                  <span className="text-gray-700 font-medium">{t('homePage.cardUsageSection.section2.goldCard')}</span>
-                  <span className="text-xl font-bold text-yellow-600">3.0％</span>
-                </div>
-                <div className="flex justify-between items-center pb-3 border-b border-gray-200">
-                  <span className="text-gray-700 font-medium">{t('homePage.cardUsageSection.section2.platinumCard')}</span>
-                  <span className="text-xl font-bold text-gray-600">2.0％</span>
-                </div>
-                <div className="flex justify-between items-center pb-3">
-                  <span className="text-gray-700 font-medium">{t('homePage.cardUsageSection.section2.blackCard')}</span>
-                  <span className="text-xl font-bold text-gray-900">1.0％</span>
-                </div>
-              </div>
-              <p className="text-sm text-red-600 font-bold mt-6 text-center">
-                {t('homePage.cardUsageSection.section2.feeNote')}
-              </p>
-            </div>
+            <img
+              src={`${import.meta.env.BASE_URL}${getCardUsageImage()}`}
+              alt={t('homePage.cardUsageSection.section2.title')}
+              className="w-full h-auto"
+            />
           </motion.div>
         </div>
       </div>

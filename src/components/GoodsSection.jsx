@@ -21,7 +21,7 @@ const GoodsSection = () => {
       {/* 背景画像 */}
       <div className="absolute inset-0">
         <img
-          src={`${import.meta.env.BASE_URL}imgs/goods.png`}
+          src={`${import.meta.env.BASE_URL}imgs/site/goods.png`}
           alt="オオカミグッズ"
           className="w-full h-full object-cover"
         />

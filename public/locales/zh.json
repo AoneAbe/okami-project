@@ -14,10 +14,10 @@
     "news": "新聞",
     "company": "公司信息",
     "apply": "申請",
-    "card": "大神卡",
+    "card": "大神卡是指",
     "lineup": "卡片陣容",
     "blog": "部落格",
-    "contact": "聯絡我們"
+    "contact": "申请&联系我们"
   },
   "companyPage": {
     "subtitle": "公司信息",
@@ -54,21 +54,70 @@
       }
     }
   },
+  "lineCta": {
+    "title": "通过LINE申请OKAMI卡",
+    "subtitle": "简单3步完成申请",
+    "button": "通过LINE申请"
+  },
   "homePage": {
     "section1": {
-      "subtitle": "支援加密貨幣　OKAMICARD",
+      "subtitle": "支援加密貨幣的VISA信用卡 OKAMICARD",
       "title": "世界最高級\n私人\n安全卡",
-      "feature1": "可存儲所有加密貨幣",
-      "feature2": "與專用錢包聯動",
-      "feature3": "無需兌換成法定貨幣\n即可直接支付"
+      "feature1": "支援加密貨幣",
+      "feature2": "無需審核",
+      "feature3": "免年費",
+      "feature4": "社會貢獻",
+      "slide2": {
+        "subtitle": "SOCIAL CONTRIBUTION CARD",
+        "title": "只需使用\n即可做出\n社會貢獻的信用卡",
+        "description": "大神卡是一張日常購物即可直接支持動物保護的社會貢獻型卡片。\n\n在日本，至今仍存在著每日約有6.6隻犬隻遭安樂死，每年超過11,000隻以上生命消逝的現狀。\n\n我們一直與官民動物保護團體合作並提供支援。\n\n大神項目將以「動物安樂死歸零」為使命，繼續提供支持。",
+        "highlight": "您的卡片使用將成為拯救動物生命的力量。"
+      },
+      "slide4": {
+        "subtitle": "ALL-IN-ONE CRYPTO CARD",
+        "title": "一卡在手\n萬事俱備",
+        "features": [
+          {
+            "title": "全球通用",
+            "description": "與VISA合作，全球超過1.5億家店鋪可用"
+          },
+          {
+            "title": "支持所有加密貨幣",
+            "description": "BTC、ETH及主要山寨幣逐步支持"
+          },
+          {
+            "title": "錢包統一管理",
+            "description": "高安全性錢包統一管理所有幣種"
+          },
+          {
+            "title": "無需審核・免年費",
+            "description": "人人都可輕鬆申請"
+          },
+          {
+            "title": "全球ATM取款",
+            "description": "隨時隨地提取當地貨幣"
+          },
+          {
+            "title": "手機支付",
+            "description": "無需實體卡即可無現金支付"
+          }
+        ]
+      }
     },
     "section2": {
       "title": "Pick UP News",
-      "subtitle": "最新消息"
+      "subtitle": "最新消息",
+      "prevNews": "上一条新闻",
+      "nextNews": "下一条新闻"
     },
     "section3": {
       "title": "Future",
       "subtitle": "OKAMI CARD的特點"
+    },
+    "aboutSection": {
+      "title": "什麼是OKAMI PROJECT？",
+      "description": "大神項目是一個創新的社會貢獻型金融科技項目，於2024年3月成立，旨在<accent>「創造一個通過使用加密貨幣來拯救動物生命的世界」</accent>。我們自主開發的「大神錢包」是一款可以存儲和管理多種加密貨幣的應用程序，而與該錢包綁定使用的「大神卡」是<accent>全球罕見的可使用加密貨幣直接支付的VISA信用卡</accent>。",
+      "highlight": "特別值得注意的是，當使用卡片時，「大神幣（OKM）」作為手續費被消費，其中一部分會自動捐贈給動物保護團體（已取得專利第7737598號）。這一舉措獲得了認可，使我們成為2025大阪世博會（EXPO2025）大阪健康護理展館的官方合作夥伴。我們致力於幫助改變日本每年超過11,000隻動物被安樂死的現狀。"
     },
     "featuresSection": {
       "title": "大神卡的6大特點",
@@ -100,7 +149,7 @@
       ]
     },
     "cardVariationSection": {
-      "title": "CARD LINEUP"
+      "title": "卡片阵容"
     },
     "socialContributionSection": {
       "title": "使用越多\n對社會貢獻越大",
@@ -129,7 +178,7 @@
         "highlight2": "通過改善供需平衡預期將來可能實現價格上漲的設計"
       },
       "section2": {
-        "title": "大神卡的手續費\n達到業界最低水平！",
+        "title": "大神卡的手續費\n達到業界最低水平・無審查",
         "description": "大神項目的主要收入來源不是支付手續費，而是<accent>持有大神幣（OKM）總發行量的70%所帶來的市值增長</accent>。因此，<accent>卡片支付手續費在加密資產卡片行業中實現了最低水平的「1.0%～」</accent>。手續費根據卡片等級（GREEN/GOLD/PLATINUM/BLACK等）而有所不同。",
         "highlight1": "持有大神幣（OKM）總發行量的70%所帶來的市值增長",
         "highlight2": "卡片支付手續費在加密資產卡片行業中實現最低水平的「1.0%～」",
@@ -152,6 +201,13 @@
       "description": "大神項目通過服裝、配飾、生活雜貨等原創商品的開發，向從兒童到成人的廣泛年齡層<accent>推廣大神品牌的世界觀和信息</accent>。通過自然融入日常生活的設計性和角色性商品，在擴大與粉絲的接觸點的同時，致力於<accent>作為全球喜愛品牌的認知提升和價值創造</accent>。",
       "highlight1": "推廣大神品牌的世界觀和信息",
       "highlight2": "作為全球喜愛品牌的認知提升和價值創造"
+    },
+    "okamiOmoiSection": {
+      "title": "「大神」名稱中\n蘊含的心意",
+      "description": "「大神（Okami）」源自曾經棲息於日本的日本狼。近年的研究表明，這一滅絕物種被認為是現代犬的祖先，因此作為動物保護的象徵性存在被採用為項目名稱。此外，「大神」蘊含著與「GOD」相通的神聖意義，也寄託了人與動物共同生存的世界願望。"
+    },
+    "advisorsSection": {
+      "title": "代表・顾问介绍"
     },
     "messageSection": {
       "title": "代表致辭",
@@ -268,6 +324,15 @@
   },
   "blogPage": {
     "title": "What's NEWS",
-    "subtitle": "最新消息"
+    "subtitle": "最新消息",
+    "viewOnX": "在X上查看",
+    "prevPage": "上一页",
+    "nextPage": "下一页",
+    "pageInfo": "第 {{current}} / {{total}} 页（共{{items}}条）"
+  },
+  "blogDetail": {
+    "notFound": "找不到文章",
+    "backToList": "返回列表",
+    "back": "返回"
   }
 }

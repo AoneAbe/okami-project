@@ -10,10 +10,10 @@ export const tweetData = [
 
     // 画像がある場合（最大4枚）
     images: [
-      'imgs/tweet1-1.jpg',
-      'imgs/tweet1-2.jpg',
-      // 'imgs/tweet1-3.jpg',
-      // 'imgs/tweet1-4.jpg',
+      'imgs/tweets/tweet1-1.jpg',
+      'imgs/tweets/tweet1-2.jpg',
+      // 'imgs/tweets/tweet1-3.jpg',
+      // 'imgs/tweets/tweet1-4.jpg',
     ],
 
     // 動画がある場合（画像と動画は排他的に使用）
@@ -92,7 +92,7 @@ export const tweetData = [
 1. このファイルを tweetData.js としてコピー
 2. 実際のX投稿のURLを記入
 3. 投稿本文をコピーして translations の各言語に記入
-4. 画像がある場合は public/imgs/ に保存して、パスを images 配列に追加
+4. 画像がある場合は public/imgs/tweets/ に保存して、パスを images 配列に追加
 5. 動画がある場合は videoUrl に動画URLを記入（X埋め込み用）
 
 注意：

@@ -14,10 +14,10 @@
     "news": "News",
     "company": "Company",
     "apply": "Apply",
-    "card": "Okami Card",
+    "card": "What's Okami Card",
     "lineup": "Card Lineup",
     "blog": "Blog",
-    "contact": "Contact"
+    "contact": "Apply & Contact"
   },
   "companyPage": {
     "subtitle": "Company Information",
@@ -54,21 +54,70 @@
       }
     }
   },
+  "lineCta": {
+    "title": "Apply for OKAMI Card via LINE",
+    "subtitle": "Complete in 3 easy steps",
+    "button": "Apply via LINE"
+  },
   "homePage": {
     "section1": {
-      "subtitle": "Cryptocurrency Compatible OKAMICARD",
+      "subtitle": "Cryptocurrency Compatible VISA Credit Card OKAMICARD",
       "title": "World's Premier\nPrivate\nSecurity Card",
-      "feature1": "Store all cryptocurrencies",
-      "feature2": "Linked with dedicated wallet",
-      "feature3": "Direct payment without converting\nto fiat currency"
+      "feature1": "Crypto Compatible",
+      "feature2": "No Credit Check",
+      "feature3": "No Annual Fee",
+      "feature4": "Social Contribution",
+      "slide2": {
+        "subtitle": "SOCIAL CONTRIBUTION CARD",
+        "title": "A Credit Card That\nMakes a Difference\nJust by Using It",
+        "description": "Okami Card is a social contribution card where everyday purchases directly support animal protection.\n\nIn Japan, approximately 6.6 dogs are euthanized every day, resulting in over 11,000 dogs losing their lives annually.\n\nWe have collaborated with and supported both public and private animal welfare organizations.\n\nThe Okami Project will continue its support with the mission of \"Zero Animal Euthanasia.\"",
+        "highlight": "Your card usage becomes the power to save animal lives."
+      },
+      "slide4": {
+        "subtitle": "ALL-IN-ONE CRYPTO CARD",
+        "title": "Everything You Need\nin One Card",
+        "features": [
+          {
+            "title": "Usable Worldwide",
+            "description": "Partnered with VISA, available at 150M+ stores globally"
+          },
+          {
+            "title": "All Crypto Supported",
+            "description": "BTC, ETH, and major altcoins progressively supported"
+          },
+          {
+            "title": "Unified Wallet",
+            "description": "Manage all coins in one high-security wallet"
+          },
+          {
+            "title": "No Review, No Annual Fee",
+            "description": "Easy application for everyone"
+          },
+          {
+            "title": "Global ATM Withdrawals",
+            "description": "Withdraw local currency anytime, anywhere"
+          },
+          {
+            "title": "Mobile Payments",
+            "description": "Cashless payments without physical card"
+          }
+        ]
+      }
     },
     "section2": {
       "title": "Pick UP News",
-      "subtitle": "Latest News"
+      "subtitle": "Latest News",
+      "prevNews": "Previous News",
+      "nextNews": "Next News"
     },
     "section3": {
       "title": "Future",
       "subtitle": "OKAMI CARD Features"
+    },
+    "aboutSection": {
+      "title": "What is OKAMI PROJECT?",
+      "description": "Okami Project is an innovative social contribution fintech project launched in March 2024 with the aim of <accent>\"creating a world where using cryptocurrency helps save animal lives.\"</accent> Our in-house developed \"Okami Wallet\" is an application that can store and manage multiple cryptocurrencies, and the \"Okami Card\" used in conjunction with the wallet is <accent>a rare VISA credit card in the world that enables direct payment with cryptocurrency</accent>.",
+      "highlight": "What's particularly noteworthy is the mechanism (Patent No. 7737598) where \"Okami Coin (OKM)\" is consumed as a transaction fee when using the card, and a portion of it is automatically donated to animal protection organizations. This initiative was recognized, leading to our participation as an Official Partner of the Osaka Healthcare Pavilion at Expo 2025 Osaka. We aim to help change Japan's current situation where over 11,000 animals are euthanized annually."
     },
     "featuresSection": {
       "title": "6 Key Features of Okami Card",
@@ -129,7 +178,7 @@
         "highlight2": "Design expected to potentially lead to future price appreciation through improved supply-demand balance"
       },
       "section2": {
-        "title": "Okami Card Fees at\nIndustry-Leading Low Rates!",
+        "title": "Okami Card Fees at\nIndustry-Leading Low Rates & No screening",
         "description": "The main revenue source for the Okami Project is not transaction fees, but <accent>growth in market capitalization from holding 70% of the total OKM coin issuance</accent>. Therefore, <accent>card transaction fees achieve industry-leading low rates of \"1.0% to\"</accent> in the cryptocurrency card industry. Note that fees vary depending on card rank (GREEN/GOLD/PLATINUM/BLACK, etc.).",
         "highlight1": "Growth in market capitalization from holding 70% of total Okami Coin (OKM) issuance",
         "highlight2": "Card transaction fees achieve industry-leading low rates of \"1.0% to\"",
@@ -152,6 +201,13 @@
       "description": "Through the development of original merchandise including apparel, accessories, and lifestyle goods, the Okami Project <accent>promotes the Okami brand's worldview and message</accent> to a wide range of generations from children to adults. With products that naturally blend into daily life while maintaining design quality and character appeal, we expand connections with fans while working toward <accent>brand recognition and value creation as a globally beloved brand</accent>.",
       "highlight1": "Promoting the Okami brand's worldview and message",
       "highlight2": "Brand recognition and value creation as a globally beloved brand"
+    },
+    "okamiOmoiSection": {
+      "title": "The Meaning Behind\nthe Name \"Okami\"",
+      "description": "\"Okami\" is derived from the Japanese wolf (Nihon Okami), which once inhabited Japan. Recent research suggests that this extinct species was the ancestor of modern dogs, and it was adopted as the project name as a symbolic figure of animal welfare. Additionally, \"Okami (大神)\" carries a sacred meaning that connects to \"GOD,\" embodying our wish for a world where humans and animals live together in harmony."
+    },
+    "advisorsSection": {
+      "title": "Representative & Advisors"
     },
     "messageSection": {
       "title": "Message from the Representative",
@@ -268,6 +324,15 @@
   },
   "blogPage": {
     "title": "What's NEWS",
-    "subtitle": "Latest News"
+    "subtitle": "Latest News",
+    "viewOnX": "View on X",
+    "prevPage": "Previous",
+    "nextPage": "Next",
+    "pageInfo": "Page {{current}} / {{total}} ({{items}} items)"
+  },
+  "blogDetail": {
+    "notFound": "Article not found",
+    "backToList": "Back to list",
+    "back": "Back"
   }
 }

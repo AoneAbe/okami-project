@@ -15,6 +15,14 @@ const FeaturesSection = () => {
     'from-indigo-500 to-blue-500',
     'from-cyan-500 to-teal-500'
   ];
+  const featureImages = [
+    'imgs/site/features1.png',
+    'imgs/site/features2.png',
+    'imgs/site/features3.png',
+    'imgs/site/features4.png',
+    'imgs/site/features5.png',
+    'imgs/site/features6.png'
+  ];
 
   const featuresData = t('homePage.featuresSection.features', { returnObjects: true });
   const features = Array.isArray(featuresData)
@@ -22,7 +30,8 @@ const FeaturesSection = () => {
         ...feature,
         id: index + 1,
         icon: icons[index],
-        gradient: gradients[index]
+        gradient: gradients[index],
+        image: featureImages[index]
       }))
     : [];
 
@@ -89,9 +98,18 @@ const FeaturesSection = () => {
               >
                 {/* カード本体 */}
                 <div className="relative bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 h-full">
-                  {/* グラデーションアイコン背景 */}
-                  <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${feature.gradient} p-4 mb-6 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg`}>
-                    <IconComponent className="w-full h-full text-white" strokeWidth={2} />
+                  {/* アイコンと画像を横並び */}
+                  <div className="flex items-start justify-between mb-6">
+                    {/* グラデーションアイコン背景 */}
+                    <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${feature.gradient} p-4 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg`}>
+                      <IconComponent className="w-full h-full text-white" strokeWidth={2} />
+                    </div>
+                    {/* 特徴画像 */}
+                    <img
+                      src={`${import.meta.env.BASE_URL}${feature.image}`}
+                      alt={feature.title}
+                      className="w-20 h-20 object-contain"
+                    />
                   </div>
 
                   {/* タイトル */}

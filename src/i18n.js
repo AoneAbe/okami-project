@@ -18,7 +18,10 @@ i18n
       caches: ['localStorage']
     },
     backend: {
-      loadPath: `${import.meta.env.BASE_URL}locales/{{lng}}.json`
+      loadPath: `${import.meta.env.BASE_URL}locales/{{lng}}.json?v=${Date.now()}`
+    },
+    react: {
+      useSuspense: true
     }
   });
 

@@ -2,34 +2,58 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 import { newsData } from '../data/newsData';
 
+// デフォルト画像
+const DEFAULT_THUMBNAIL = 'imgs/site/slide-2.png';
+
 const Section2 = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  // newsDataを新しい順にソート
+  const sortedNewsData = [...newsData].sort((a, b) => new Date(b.date) - new Date(a.date));
+
+  // ブログ詳細ページへ遷移
+  const handleCardClick = (newsId) => {
+    navigate(`/blog/${newsId}`);
+  };
+
+  // 多言語対応のテキスト取得関数
+  const getLocalizedText = (item, field) => {
+    const translation = item.translations?.[i18n.language];
+    return translation?.[field] || item[field];
+  };
+
+  // サムネイル画像取得（なければデフォルト画像）
+  const getThumbnail = (item) => {
+    return item.thumbnail || DEFAULT_THUMBNAIL;
+  };
 
   // 自動スライド（5秒ごと）
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % newsData.length);
+      setCurrentIndex((prev) => (prev + 1) % sortedNewsData.length);
     }, 5000);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [sortedNewsData.length]);
 
   const handlePrev = () => {
-    setCurrentIndex((prev) => (prev - 1 + newsData.length) % newsData.length);
+    setCurrentIndex((prev) => (prev - 1 + sortedNewsData.length) % sortedNewsData.length);
   };
 
   const handleNext = () => {
-    setCurrentIndex((prev) => (prev + 1) % newsData.length);
+    setCurrentIndex((prev) => (prev + 1) % sortedNewsData.length);
   };
 
   const getVisibleNews = () => {
     const visible = [];
     for (let i = 0; i < 4; i++) {
-      const index = (currentIndex + i) % newsData.length;
-      visible.push({ ...newsData[index], displayIndex: i });
+      const index = (currentIndex + i) % sortedNewsData.length;
+      visible.push({ ...sortedNewsData[index], displayIndex: i });
     }
     return visible;
   };
@@ -56,20 +80,21 @@ const Section2 = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.5 }}
+                onClick={() => handleCardClick(visibleNews[0].id)}
                 className="relative group cursor-pointer overflow-hidden rounded-2xl shadow-2xl h-[500px]"
               >
                 <img
-                  src={`${import.meta.env.BASE_URL}${visibleNews[0].thumbnail}`}
-                  alt={visibleNews[0].title}
+                  src={`${import.meta.env.BASE_URL}${getThumbnail(visibleNews[0])}`}
+                  alt={getLocalizedText(visibleNews[0], 'title')}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                   <span className="inline-block px-3 py-1 bg-cyan-500 text-xs font-semibold rounded-full mb-3">
-                    {visibleNews[0].category}
+                    {getLocalizedText(visibleNews[0], 'category')}
                   </span>
                   <h3 className="text-2xl font-bold mb-2 line-clamp-2">
-                    {visibleNews[0].title}
+                    {getLocalizedText(visibleNews[0], 'title')}
                   </h3>
                   <p className="text-sm text-gray-300">{visibleNews[0].date}</p>
                 </div>
@@ -86,16 +111,17 @@ const Section2 = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.5 }}
-                  className="bg-white p-6 rounded-xl shadow-lg"
+                  onClick={() => handleCardClick(visibleNews[0].id)}
+                  className="bg-white p-6 rounded-xl shadow-lg cursor-pointer hover:shadow-xl transition-shadow"
                 >
                   <span className="inline-block px-3 py-1 bg-cyan-500 text-white text-xs font-semibold rounded-full mb-3">
-                    {visibleNews[0].category}
+                    {getLocalizedText(visibleNews[0], 'category')}
                   </span>
                   <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">
-                    {visibleNews[0].title}
+                    {getLocalizedText(visibleNews[0], 'title')}
                   </h3>
                   <p className="text-sm text-gray-600 line-clamp-2 mb-2">
-                    {visibleNews[0].content.substring(0, 100)}...
+                    {getLocalizedText(visibleNews[0], 'content')?.substring(0, 100)}...
                   </p>
                   <p className="text-xs text-gray-400">{visibleNews[0].date}</p>
                 </motion.div>
@@ -109,14 +135,14 @@ const Section2 = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
-                    onClick={() => setCurrentIndex((currentIndex + index + 1) % newsData.length)}
+                    onClick={() => handleCardClick(news.id)}
                     className="group cursor-pointer"
                   >
                     {/* 画像 */}
                     <div className="relative overflow-hidden rounded-lg shadow-md aspect-square mb-3">
                       <img
-                        src={`${import.meta.env.BASE_URL}${news.thumbnail}`}
-                        alt={news.title}
+                        src={`${import.meta.env.BASE_URL}${getThumbnail(news)}`}
+                        alt={getLocalizedText(news, 'title')}
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                       />
                       <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors" />
@@ -125,10 +151,10 @@ const Section2 = () => {
                     {/* テキスト情報 */}
                     <div className="space-y-2">
                       <span className="inline-block px-2 py-0.5 bg-cyan-100 text-cyan-700 text-xs font-semibold rounded">
-                        {news.category}
+                        {getLocalizedText(news, 'category')}
                       </span>
                       <h4 className="text-sm font-bold text-gray-800 line-clamp-2 leading-snug">
-                        {news.title}
+                        {getLocalizedText(news, 'title')}
                       </h4>
                     </div>
                   </motion.div>
@@ -142,14 +168,14 @@ const Section2 = () => {
             <button
               onClick={handlePrev}
               className="p-3 bg-white rounded-full shadow-lg hover:bg-cyan-500 hover:text-white transition-colors"
-              aria-label="前のニュース"
+              aria-label={t('homePage.section2.prevNews', '前のニュース')}
             >
               <ChevronLeft className="w-6 h-6" />
             </button>
             <button
               onClick={handleNext}
               className="p-3 bg-white rounded-full shadow-lg hover:bg-cyan-500 hover:text-white transition-colors"
-              aria-label="次のニュース"
+              aria-label={t('homePage.section2.nextNews', '次のニュース')}
             >
               <ChevronRight className="w-6 h-6" />
             </button>
@@ -157,7 +183,7 @@ const Section2 = () => {
 
           {/* インジケーター */}
           <div className="flex justify-center gap-2 mt-6">
-            {newsData.map((_, index) => (
+            {sortedNewsData.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}

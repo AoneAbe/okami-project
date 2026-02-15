@@ -6,9 +6,9 @@ const SocialContributionSection = () => {
   const { t } = useTranslation();
 
   const images = [
-    { id: 1, src: 'social-contribution-1.JPG', alt: '動物保護活動 1' },
-    { id: 2, src: 'social-contribution-2.jpeg', alt: '動物保護活動 2' },
-    { id: 3, src: 'social-contribution-3.jpg', alt: '動物保護活動 3' }
+    { id: 1, src: 'site/social-contribution-1.JPG', alt: '動物保護活動 1' },
+    { id: 2, src: 'site/social-contribution-2.jpeg', alt: '動物保護活動 2' },
+    { id: 3, src: 'site/social-contribution-3.jpg', alt: '動物保護活動 3' }
   ];
 
   const imageVariants = {
@@ -48,12 +48,12 @@ const SocialContributionSection = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="overflow-hidden rounded-2xl shadow-2xl h-[680px]"
+              className="overflow-hidden rounded-2xl shadow-2xl h-[544px]"
             >
               <img
                 src={`${import.meta.env.BASE_URL}imgs/${images[0].src}`}
                 alt={images[0].alt}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-top"
               />
             </motion.div>
           </div>

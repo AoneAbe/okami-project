@@ -17,7 +17,7 @@ const Footer = () => {
           {/* ロゴ */}
           <div className="mb-6">
             <img
-              src={`${import.meta.env.BASE_URL}imgs/ookami-logo.png`}
+              src={`${import.meta.env.BASE_URL}imgs/site/ookami-logo.png`}
               alt="OKAMICARD Logo"
               className="h-12 mx-auto"
             />
