@@ -14,11 +14,8 @@ import GoodsSection from '../components/GoodsSection';
 import OkamiOmoiSection from '../components/OkamiOmoiSection';
 import AdvisorsSection from '../components/AdvisorsSection';
 import MessageSection from '../components/MessageSection';
-import Section7 from '../components/Section7';
 import Section8 from '../components/Section8';
-import Section10 from '../components/Section10';
 import LineCtaSection from '../components/LineCtaSection';
-import CompanyInfoSection from '../components/CompanyInfoSection';
 import Footer from '../components/Footer';
 import CrossBorderModal from '../components/CrossBorderModal';
 
@@ -64,7 +61,6 @@ const HomePage = () => {
       <MessageSection />
       <Section8 />
       <LineCtaSection />
-      <CompanyInfoSection />
       <Footer />
     </div>
   );
